@@ -1,0 +1,30 @@
+INFO:__main__:Loading NudeNet model...
+INFO:__main__:NudeNet model loaded successfully
+INFO:__main__:Starting Fixed AI Content Moderation Service on 0.0.0.0:5001
+ * Serving Flask app 'nudenet-fixed'
+ * Debug mode: off
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://172.31.45.113:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [26/Jul/2025 19:14:41] "GET /health HTTP/1.1" 200 -
+ERROR:__main__:Error in analyze-url endpoint: HTTPSConnectionPool(host='via.placeholder.com', port=443): Max retries exceeded with url: /300x300/FF0000/FFFFFF?text=TEST (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fa4e1773bc0>: Failed to resolve 'via.placeholder.com' ([Errno -2] Name or service not known)"))
+INFO:werkzeug:127.0.0.1 - - [26/Jul/2025 19:15:52] "[35m[1mPOST /analyze-url HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [26/Jul/2025 19:20:22] "GET /health HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Jul/2025 19:20:29] "GET /health HTTP/1.1" 200 -
+INFO:__main__:Analyzing image: /etc/hostname for context: public_gallery
+INFO:__main__:Analyzing image: /etc/hostname
+ERROR:__main__:Error analyzing nudity: 'NoneType' object has no attribute 'shape'
+INFO:__main__:Applying rules - Nudity: 50.00%, Max allowed: 60%
+INFO:__main__:APPROVED: Nudity score 50.00% within acceptable range
+INFO:__main__:Analysis complete: approved (confidence: 0.81)
+INFO:werkzeug:127.0.0.1 - - [26/Jul/2025 19:20:34] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing image: /usr/share/pixmaps/debian-logo.png for context: public_gallery
+INFO:__main__:Analyzing image: /usr/share/pixmaps/debian-logo.png
+INFO:__main__:NudeNet detections: []
+INFO:__main__:Analysis complete - Total score: 0.00%, Parts: {'none_detected': 0.0}
+INFO:__main__:Applying rules - Nudity: 0.00%, Max allowed: 60%
+INFO:__main__:APPROVED: Nudity score 0.00% well below threshold
+INFO:__main__:Analysis complete: approved (confidence: 0.90)
+INFO:werkzeug:127.0.0.1 - - [26/Jul/2025 19:20:59] "POST /analyze HTTP/1.1" 200 -

@@ -1,0 +1,4 @@
+# Lightweight requirements for testing
+flask==2.3.2
+flask-cors==4.0.0
+python-dotenv==1.0.0

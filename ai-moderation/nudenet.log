@@ -1,0 +1,28 @@
+INFO:__main__:Loading NudeNet model...
+INFO:__main__:NudeNet model loaded successfully
+INFO:__main__:Starting Simple AI Content Moderation Service on 0.0.0.0:5001
+ * Serving Flask app 'nudenet-simple'
+ * Debug mode: off
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://172.31.45.113:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [26/Jul/2025 18:53:26] "GET /health HTTP/1.1" 200 -
+INFO:__main__:Analyzing image: test_image_profile_pic.jpg for context: profile_pic
+[ WARN:0@136.141] global loadsave.cpp:275 findDecoder imread_('test_image_profile_pic.jpg'): can't open/read file: check file path/integrity
+ERROR:__main__:Error analyzing nudity: 'NoneType' object has no attribute 'shape'
+INFO:__main__:Analysis complete: rejected (confidence: 0.90)
+INFO:__main__:Analyzing image: test_image_public_gallery.jpg for context: public_gallery
+[ WARN:0@136.141] global loadsave.cpp:275 findDecoder imread_('test_image_public_gallery.jpg'): can't open/read file: check file path/integrity
+ERROR:__main__:Error analyzing nudity: 'NoneType' object has no attribute 'shape'
+INFO:__main__:Analysis complete: approved (confidence: 0.81)
+INFO:__main__:Analyzing image: test_image_premium_gallery.jpg for context: premium_gallery
+[ WARN:0@136.141] global loadsave.cpp:275 findDecoder imread_('test_image_premium_gallery.jpg'): can't open/read file: check file path/integrity
+ERROR:__main__:Error analyzing nudity: 'NoneType' object has no attribute 'shape'
+INFO:__main__:Analysis complete: flagged (confidence: 0.63)
+INFO:__main__:Analyzing image: test_image_private_content.jpg for context: private_content
+[ WARN:0@136.141] global loadsave.cpp:275 findDecoder imread_('test_image_private_content.jpg'): can't open/read file: check file path/integrity
+ERROR:__main__:Error analyzing nudity: 'NoneType' object has no attribute 'shape'
+INFO:__main__:Analysis complete: approved (confidence: 0.81)
+INFO:werkzeug:127.0.0.1 - - [26/Jul/2025 18:53:30] "GET /test HTTP/1.1" 200 -

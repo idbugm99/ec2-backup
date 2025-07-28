@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  ai-moderator:
+    build: .
+    container_name: musenest-ai-moderator
+    ports:
+      - "5001:5001"
+    environment:
+      - DB_HOST=localhost
+      - DB_USER=root  
+      - DB_PASSWORD=
+      - DB_NAME=musenest
+      - DB_PORT=3306
+      - MODEL_CACHE_DIR=/app/models
+      - TORCH_HOME=/app/models
+    volumes:
+      - model_cache:/app/models
+      - ./images:/app/images  # Mount for test images
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          memory: 4G
+        reservations:
+          memory: 2G
+
+volumes:
+  model_cache:

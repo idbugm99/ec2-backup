@@ -1,0 +1,1654 @@
+INFO:__main__:Loading NudeNet model...
+INFO:__main__:NudeNet model loaded successfully
+INFO:__main__:Starting NudeNet Upload API on 0.0.0.0:5001
+ * Serving Flask app 'nudenet-upload-api'
+ * Debug mode: off
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://172.31.45.113:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [26/Jul/2025 20:43:14] "GET /health HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753562642660_20230703_111727.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753562642660_20230703_111727.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.7875638008117676, 'box': [1660, 1561, 1059, 1006]}, {'class': 'MALE_GENITALIA_EXPOSED', 'score': 0.26578259468078613, 'box': [2068, 2341, 538, 643]}]
+INFO:__main__:Detected: FACE_FEMALE at (1660, 1561) with confidence 78.76%
+INFO:__main__:Detected: MALE_GENITALIA_EXPOSED at (2068, 2341) with confidence 26.58%
+INFO:__main__:Analysis complete - Total: 78.76%, Parts: {'genitalia': 26.578259468078613}
+INFO:__main__:Part locations: {'genitalia': {'x': 2068, 'y': 2341, 'width': 538, 'height': 643, 'confidence': 26.58}}
+INFO:__main__:Analysis complete: rejected (nudity: 78.76%)
+INFO:werkzeug:127.0.0.1 - - [26/Jul/2025 20:44:05] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753563147051_20230703_111608.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753563147051_20230703_111608.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.7749767899513245, 'box': [1575, 1533, 557, 590]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.6899533271789551, 'box': [1274, 2513, 565, 547]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.6749409437179565, 'box': [1906, 2507, 632, 658]}, {'class': 'BELLY_EXPOSED', 'score': 0.5062198042869568, 'box': [1286, 3155, 1091, 844]}]
+INFO:__main__:Detected: FACE_FEMALE at (1575, 1533) with confidence 77.50%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1274, 2513) with confidence 69.00%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1906, 2507) with confidence 67.49%
+INFO:__main__:Detected: BELLY_EXPOSED at (1286, 3155) with confidence 50.62%
+INFO:__main__:Analysis complete - Total: 77.50%, Parts: {'breast': 68.99533271789551}
+INFO:__main__:Part locations: {'breast': {'x': 1274, 'y': 2513, 'width': 565, 'height': 547, 'confidence': 69.0}}
+INFO:__main__:Analysis complete: rejected (nudity: 77.50%)
+INFO:werkzeug:127.0.0.1 - - [26/Jul/2025 20:52:30] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753563191836_20230703_111608.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753563191836_20230703_111608.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.7749767899513245, 'box': [1575, 1533, 557, 590]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.6899533271789551, 'box': [1274, 2513, 565, 547]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.6749409437179565, 'box': [1906, 2507, 632, 658]}, {'class': 'BELLY_EXPOSED', 'score': 0.5062198042869568, 'box': [1286, 3155, 1091, 844]}]
+INFO:__main__:Detected: FACE_FEMALE at (1575, 1533) with confidence 77.50%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1274, 2513) with confidence 69.00%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1906, 2507) with confidence 67.49%
+INFO:__main__:Detected: BELLY_EXPOSED at (1286, 3155) with confidence 50.62%
+INFO:__main__:Analysis complete - Total: 77.50%, Parts: {'breast': 68.99533271789551}
+INFO:__main__:Part locations: {'breast': {'x': 1274, 'y': 2513, 'width': 565, 'height': 547, 'confidence': 69.0}}
+INFO:__main__:Analysis complete: rejected (nudity: 77.50%)
+INFO:werkzeug:127.0.0.1 - - [26/Jul/2025 20:53:15] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753563204706_20250710_141253.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753563204706_20250710_141253.jpg
+INFO:__main__:NudeNet detections: [{'class': 'MALE_GENITALIA_EXPOSED', 'score': 0.65223228931427, 'box': [0, 172, 817, 1927]}, {'class': 'FEMALE_GENITALIA_EXPOSED', 'score': 0.4570100009441376, 'box': [317, 942, 1986, 2825]}]
+INFO:__main__:Detected: MALE_GENITALIA_EXPOSED at (0, 172) with confidence 65.22%
+INFO:__main__:Detected: FEMALE_GENITALIA_EXPOSED at (317, 942) with confidence 45.70%
+INFO:__main__:Analysis complete - Total: 65.22%, Parts: {'genitalia': 65.223228931427}
+INFO:__main__:Part locations: {'genitalia': {'x': 0, 'y': 172, 'width': 817, 'height': 1927, 'confidence': 65.22}}
+INFO:__main__:Analysis complete: rejected (nudity: 65.22%)
+INFO:werkzeug:127.0.0.1 - - [26/Jul/2025 20:53:28] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753563227911_r-sex-2.jpeg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753563227911_r-sex-2.jpeg
+INFO:__main__:NudeNet detections: [{'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.4036407768726349, 'box': [128, 96, 47, 51]}, {'class': 'FACE_FEMALE', 'score': 0.39828577637672424, 'box': [39, 62, 54, 50]}, {'class': 'BUTTOCKS_EXPOSED', 'score': 0.31453192234039307, 'box': [222, 27, 68, 38]}]
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (128, 96) with confidence 40.36%
+INFO:__main__:Detected: FACE_FEMALE at (39, 62) with confidence 39.83%
+INFO:__main__:Detected: BUTTOCKS_EXPOSED at (222, 27) with confidence 31.45%
+INFO:__main__:Analysis complete - Total: 40.36%, Parts: {'breast': 40.36407768726349, 'buttocks': 31.453192234039307}
+INFO:__main__:Part locations: {'breast': {'x': 128, 'y': 96, 'width': 47, 'height': 51, 'confidence': 40.36}, 'buttocks': {'x': 222, 'y': 27, 'width': 68, 'height': 38, 'confidence': 31.45}}
+INFO:__main__:Analysis complete: approved (nudity: 40.36%)
+INFO:werkzeug:127.0.0.1 - - [26/Jul/2025 20:53:50] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753563576436_20230703_111545.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753563576436_20230703_111545.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.8163187503814697, 'box': [2343, 691, 803, 712]}, {'class': 'FEMALE_BREAST_COVERED', 'score': 0.4958887994289398, 'box': [2758, 1904, 817, 665]}, {'class': 'FEMALE_BREAST_COVERED', 'score': 0.44704559445381165, 'box': [1981, 1932, 785, 611]}]
+INFO:__main__:Detected: FACE_FEMALE at (2343, 691) with confidence 81.63%
+INFO:__main__:Detected: FEMALE_BREAST_COVERED at (2758, 1904) with confidence 49.59%
+INFO:__main__:Detected: FEMALE_BREAST_COVERED at (1981, 1932) with confidence 44.70%
+INFO:__main__:Analysis complete - Total: 0.00%, Parts: {'none_detected': 0.0}
+INFO:__main__:Part locations: {}
+INFO:__main__:Analysis complete: approved (nudity: 0.00%)
+INFO:werkzeug:127.0.0.1 - - [26/Jul/2025 20:59:40] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753563593367_20230703_111608.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753563593367_20230703_111608.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.7749767899513245, 'box': [1575, 1533, 557, 590]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.6899533271789551, 'box': [1274, 2513, 565, 547]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.6749409437179565, 'box': [1906, 2507, 632, 658]}, {'class': 'BELLY_EXPOSED', 'score': 0.5062198042869568, 'box': [1286, 3155, 1091, 844]}]
+INFO:__main__:Detected: FACE_FEMALE at (1575, 1533) with confidence 77.50%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1274, 2513) with confidence 69.00%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1906, 2507) with confidence 67.49%
+INFO:__main__:Detected: BELLY_EXPOSED at (1286, 3155) with confidence 50.62%
+INFO:__main__:Analysis complete - Total: 77.50%, Parts: {'breast': 68.99533271789551}
+INFO:__main__:Part locations: {'breast': {'x': 1274, 'y': 2513, 'width': 565, 'height': 547, 'confidence': 69.0}}
+INFO:__main__:Analysis complete: rejected (nudity: 77.50%)
+INFO:werkzeug:127.0.0.1 - - [26/Jul/2025 20:59:56] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753563623990_20250710_140925.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753563623990_20250710_140925.jpg
+INFO:__main__:NudeNet detections: []
+INFO:__main__:Analysis complete - Total: 0.00%, Parts: {'none_detected': 0.0}
+INFO:__main__:Part locations: {}
+INFO:__main__:Analysis complete: approved (nudity: 0.00%)
+INFO:werkzeug:127.0.0.1 - - [26/Jul/2025 21:00:26] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753563644551_20250725_202330.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753563644551_20250725_202330.jpg
+INFO:__main__:NudeNet detections: [{'class': 'BUTTOCKS_COVERED', 'score': 0.6993350386619568, 'box': [972, 1891, 987, 631]}, {'class': 'ARMPITS_EXPOSED', 'score': 0.3241282105445862, 'box': [1781, 1073, 214, 253]}]
+INFO:__main__:Detected: BUTTOCKS_COVERED at (972, 1891) with confidence 69.93%
+INFO:__main__:Detected: ARMPITS_EXPOSED at (1781, 1073) with confidence 32.41%
+INFO:__main__:Analysis complete - Total: 0.00%, Parts: {'none_detected': 0.0}
+INFO:__main__:Part locations: {}
+INFO:__main__:Analysis complete: approved (nudity: 0.00%)
+INFO:werkzeug:127.0.0.1 - - [26/Jul/2025 21:00:48] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753563656619_20230703_111727.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753563656619_20230703_111727.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.7875638008117676, 'box': [1660, 1561, 1059, 1006]}, {'class': 'MALE_GENITALIA_EXPOSED', 'score': 0.26578259468078613, 'box': [2068, 2341, 538, 643]}]
+INFO:__main__:Detected: FACE_FEMALE at (1660, 1561) with confidence 78.76%
+INFO:__main__:Detected: MALE_GENITALIA_EXPOSED at (2068, 2341) with confidence 26.58%
+INFO:__main__:Analysis complete - Total: 78.76%, Parts: {'genitalia': 26.578259468078613}
+INFO:__main__:Part locations: {'genitalia': {'x': 2068, 'y': 2341, 'width': 538, 'height': 643, 'confidence': 26.58}}
+INFO:__main__:Analysis complete: rejected (nudity: 78.76%)
+INFO:werkzeug:127.0.0.1 - - [26/Jul/2025 21:00:59] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753564813510_20230703_111727.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753564813510_20230703_111727.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.7875638008117676, 'box': [1660, 1561, 1059, 1006]}, {'class': 'MALE_GENITALIA_EXPOSED', 'score': 0.26578259468078613, 'box': [2068, 2341, 538, 643]}]
+INFO:__main__:Detected: FACE_FEMALE at (1660, 1561) with confidence 78.76%
+INFO:__main__:Detected: MALE_GENITALIA_EXPOSED at (2068, 2341) with confidence 26.58%
+INFO:__main__:Analysis complete - Total: 78.76%, Parts: {'genitalia': 26.578259468078613}
+INFO:__main__:Part locations: {'genitalia': {'x': 2068, 'y': 2341, 'width': 538, 'height': 643, 'confidence': 26.58}}
+INFO:__main__:Analysis complete: rejected (nudity: 78.76%)
+INFO:werkzeug:127.0.0.1 - - [26/Jul/2025 21:20:17] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753564883931_20230703_111727.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753564883931_20230703_111727.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.7875638008117676, 'box': [1660, 1561, 1059, 1006]}, {'class': 'MALE_GENITALIA_EXPOSED', 'score': 0.26578259468078613, 'box': [2068, 2341, 538, 643]}]
+INFO:__main__:Detected: FACE_FEMALE at (1660, 1561) with confidence 78.76%
+INFO:__main__:Detected: MALE_GENITALIA_EXPOSED at (2068, 2341) with confidence 26.58%
+INFO:__main__:Analysis complete - Total: 78.76%, Parts: {'genitalia': 26.578259468078613}
+INFO:__main__:Part locations: {'genitalia': {'x': 2068, 'y': 2341, 'width': 538, 'height': 643, 'confidence': 26.58}}
+INFO:__main__:Analysis complete: rejected (nudity: 78.76%)
+INFO:werkzeug:127.0.0.1 - - [26/Jul/2025 21:21:27] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753565017431_20230703_111727.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753565017431_20230703_111727.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.7875638008117676, 'box': [1660, 1561, 1059, 1006]}, {'class': 'MALE_GENITALIA_EXPOSED', 'score': 0.26578259468078613, 'box': [2068, 2341, 538, 643]}]
+INFO:__main__:Detected: FACE_FEMALE at (1660, 1561) with confidence 78.76%
+INFO:__main__:Detected: MALE_GENITALIA_EXPOSED at (2068, 2341) with confidence 26.58%
+INFO:__main__:Analysis complete - Total: 78.76%, Parts: {'genitalia': 26.578259468078613}
+INFO:__main__:Part locations: {'genitalia': {'x': 2068, 'y': 2341, 'width': 538, 'height': 643, 'confidence': 26.58}}
+INFO:__main__:Analysis complete: rejected (nudity: 78.76%)
+INFO:werkzeug:127.0.0.1 - - [26/Jul/2025 21:23:40] "POST /analyze HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Jul/2025 21:29:22] "GET /health HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753565428003_20230703_111727.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753565428003_20230703_111727.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.7875638008117676, 'box': [1660, 1561, 1059, 1006]}, {'class': 'MALE_GENITALIA_EXPOSED', 'score': 0.26578259468078613, 'box': [2068, 2341, 538, 643]}]
+INFO:__main__:Detected: FACE_FEMALE at (1660, 1561) with confidence 78.76%
+INFO:__main__:Detected: MALE_GENITALIA_EXPOSED at (2068, 2341) with confidence 26.58%
+INFO:__main__:Analysis complete - Total: 78.76%, Parts: {'genitalia': 26.578259468078613}
+INFO:__main__:Part locations: {'genitalia': {'x': 2068, 'y': 2341, 'width': 538, 'height': 643, 'confidence': 26.58}}
+INFO:__main__:Analysis complete: rejected (nudity: 78.76%)
+INFO:werkzeug:127.0.0.1 - - [26/Jul/2025 21:30:31] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753567574024_1753567574024_20230703_111727.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753567574024_1753567574024_20230703_111727.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.7875638008117676, 'box': [1660, 1561, 1059, 1006]}, {'class': 'MALE_GENITALIA_EXPOSED', 'score': 0.26578259468078613, 'box': [2068, 2341, 538, 643]}]
+INFO:__main__:Detected: FACE_FEMALE at (1660, 1561) with confidence 78.76%
+INFO:__main__:Detected: MALE_GENITALIA_EXPOSED at (2068, 2341) with confidence 26.58%
+INFO:__main__:Analysis complete - Total: 78.76%, Parts: {'genitalia': 26.578259468078613}
+INFO:__main__:Part locations: {'genitalia': {'x': 2068, 'y': 2341, 'width': 538, 'height': 643, 'confidence': 26.58}}
+INFO:__main__:Analysis complete: rejected (nudity: 78.76%)
+INFO:werkzeug:127.0.0.1 - - [26/Jul/2025 22:06:17] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753567798950_1753567798950_20230703_111632.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753567798950_1753567798950_20230703_111632.jpg
+INFO:__main__:NudeNet detections: [{'class': 'BUTTOCKS_EXPOSED', 'score': 0.6740303635597229, 'box': [447, 1642, 2025, 1440]}, {'class': 'FEMALE_GENITALIA_EXPOSED', 'score': 0.5641533136367798, 'box': [1214, 2523, 393, 480]}]
+INFO:__main__:Detected: BUTTOCKS_EXPOSED at (447, 1642) with confidence 67.40%
+INFO:__main__:Detected: FEMALE_GENITALIA_EXPOSED at (1214, 2523) with confidence 56.42%
+INFO:__main__:Analysis complete - Total: 67.40%, Parts: {'buttocks': 67.40303635597229, 'genitalia': 56.41533136367798}
+INFO:__main__:Part locations: {'buttocks': {'x': 447, 'y': 1642, 'width': 2025, 'height': 1440, 'confidence': 67.4}, 'genitalia': {'x': 1214, 'y': 2523, 'width': 393, 'height': 480, 'confidence': 56.42}}
+INFO:__main__:Analysis complete: rejected (nudity: 67.40%)
+INFO:werkzeug:127.0.0.1 - - [26/Jul/2025 22:10:02] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753567977378_1753567977377_20230703_111545.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753567977378_1753567977377_20230703_111545.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.8163187503814697, 'box': [2343, 691, 803, 712]}, {'class': 'FEMALE_BREAST_COVERED', 'score': 0.4958887994289398, 'box': [2758, 1904, 817, 665]}, {'class': 'FEMALE_BREAST_COVERED', 'score': 0.44704559445381165, 'box': [1981, 1932, 785, 611]}]
+INFO:__main__:Detected: FACE_FEMALE at (2343, 691) with confidence 81.63%
+INFO:__main__:Detected: FEMALE_BREAST_COVERED at (2758, 1904) with confidence 49.59%
+INFO:__main__:Detected: FEMALE_BREAST_COVERED at (1981, 1932) with confidence 44.70%
+INFO:__main__:Analysis complete - Total: 0.00%, Parts: {'none_detected': 0.0}
+INFO:__main__:Part locations: {}
+INFO:__main__:Analysis complete: approved (nudity: 0.00%)
+INFO:werkzeug:127.0.0.1 - - [26/Jul/2025 22:13:01] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753568003586_1753568003586_20250710_141253.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753568003586_1753568003586_20250710_141253.jpg
+INFO:__main__:NudeNet detections: [{'class': 'MALE_GENITALIA_EXPOSED', 'score': 0.65223228931427, 'box': [0, 172, 817, 1927]}, {'class': 'FEMALE_GENITALIA_EXPOSED', 'score': 0.4570100009441376, 'box': [317, 942, 1986, 2825]}]
+INFO:__main__:Detected: MALE_GENITALIA_EXPOSED at (0, 172) with confidence 65.22%
+INFO:__main__:Detected: FEMALE_GENITALIA_EXPOSED at (317, 942) with confidence 45.70%
+INFO:__main__:Analysis complete - Total: 65.22%, Parts: {'genitalia': 65.223228931427}
+INFO:__main__:Part locations: {'genitalia': {'x': 0, 'y': 172, 'width': 817, 'height': 1927, 'confidence': 65.22}}
+INFO:__main__:Analysis complete: rejected (nudity: 65.22%)
+INFO:werkzeug:127.0.0.1 - - [26/Jul/2025 22:13:27] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753568036191_20250710_141253.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753568036191_20250710_141253.jpg
+INFO:__main__:NudeNet detections: [{'class': 'MALE_GENITALIA_EXPOSED', 'score': 0.65223228931427, 'box': [0, 172, 817, 1927]}, {'class': 'FEMALE_GENITALIA_EXPOSED', 'score': 0.4570100009441376, 'box': [317, 942, 1986, 2825]}]
+INFO:__main__:Detected: MALE_GENITALIA_EXPOSED at (0, 172) with confidence 65.22%
+INFO:__main__:Detected: FEMALE_GENITALIA_EXPOSED at (317, 942) with confidence 45.70%
+INFO:__main__:Analysis complete - Total: 65.22%, Parts: {'genitalia': 65.223228931427}
+INFO:__main__:Part locations: {'genitalia': {'x': 0, 'y': 172, 'width': 817, 'height': 1927, 'confidence': 65.22}}
+INFO:__main__:Analysis complete: rejected (nudity: 65.22%)
+INFO:werkzeug:127.0.0.1 - - [26/Jul/2025 22:13:59] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753568081972_20250710_141253.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753568081972_20250710_141253.jpg
+INFO:__main__:NudeNet detections: [{'class': 'MALE_GENITALIA_EXPOSED', 'score': 0.65223228931427, 'box': [0, 172, 817, 1927]}, {'class': 'FEMALE_GENITALIA_EXPOSED', 'score': 0.4570100009441376, 'box': [317, 942, 1986, 2825]}]
+INFO:__main__:Detected: MALE_GENITALIA_EXPOSED at (0, 172) with confidence 65.22%
+INFO:__main__:Detected: FEMALE_GENITALIA_EXPOSED at (317, 942) with confidence 45.70%
+INFO:__main__:Analysis complete - Total: 65.22%, Parts: {'genitalia': 65.223228931427}
+INFO:__main__:Part locations: {'genitalia': {'x': 0, 'y': 172, 'width': 817, 'height': 1927, 'confidence': 65.22}}
+INFO:__main__:Analysis complete: rejected (nudity: 65.22%)
+INFO:werkzeug:127.0.0.1 - - [26/Jul/2025 22:14:45] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753571425321_20250622_003445.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753571425321_20250622_003445.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.820868194103241, 'box': [1556, 1634, 472, 485]}, {'class': 'FACE_FEMALE', 'score': 0.8124507665634155, 'box': [1305, 934, 392, 445]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.7980332374572754, 'box': [1135, 1693, 368, 454]}, {'class': 'ARMPITS_EXPOSED', 'score': 0.775719165802002, 'box': [1892, 1541, 229, 266]}, {'class': 'BELLY_EXPOSED', 'score': 0.7679949998855591, 'box': [1315, 2102, 609, 546]}, {'class': 'FEMALE_GENITALIA_COVERED', 'score': 0.5976037383079529, 'box': [1426, 2777, 319, 334]}]
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1556, 1634) with confidence 82.09%
+INFO:__main__:Detected: FACE_FEMALE at (1305, 934) with confidence 81.25%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1135, 1693) with confidence 79.80%
+INFO:__main__:Detected: ARMPITS_EXPOSED at (1892, 1541) with confidence 77.57%
+INFO:__main__:Detected: BELLY_EXPOSED at (1315, 2102) with confidence 76.80%
+INFO:__main__:Detected: FEMALE_GENITALIA_COVERED at (1426, 2777) with confidence 59.76%
+INFO:__main__:Analysis complete - Total: 82.09%, Parts: {'breast': 82.0868194103241}
+INFO:__main__:Part locations: {'breast': {'x': 1556, 'y': 1634, 'width': 472, 'height': 485, 'confidence': 82.09}}
+INFO:__main__:Analysis complete: rejected (nudity: 82.09%)
+INFO:werkzeug:127.0.0.1 - - [26/Jul/2025 23:10:28] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753572871390_1753572871389_20250710_141253.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753572871390_1753572871389_20250710_141253.jpg
+INFO:__main__:NudeNet detections: [{'class': 'MALE_GENITALIA_EXPOSED', 'score': 0.65223228931427, 'box': [0, 172, 817, 1927]}, {'class': 'FEMALE_GENITALIA_EXPOSED', 'score': 0.4570100009441376, 'box': [317, 942, 1986, 2825]}]
+INFO:__main__:Detected: MALE_GENITALIA_EXPOSED at (0, 172) with confidence 65.22%
+INFO:__main__:Detected: FEMALE_GENITALIA_EXPOSED at (317, 942) with confidence 45.70%
+INFO:__main__:Analysis complete - Total: 65.22%, Parts: {'genitalia': 65.223228931427}
+INFO:__main__:Part locations: {'genitalia': {'x': 0, 'y': 172, 'width': 817, 'height': 1927, 'confidence': 65.22}}
+INFO:__main__:Analysis complete: rejected (nudity: 65.22%)
+INFO:werkzeug:127.0.0.1 - - [26/Jul/2025 23:34:35] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753572910721_1753572910720_r-sex.jpeg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753572910721_1753572910720_r-sex.jpeg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_MALE', 'score': 0.658961832523346, 'box': [150, 12, 30, 24]}]
+INFO:__main__:Detected: FACE_MALE at (150, 12) with confidence 65.90%
+INFO:__main__:Analysis complete - Total: 0.00%, Parts: {'none_detected': 0.0}
+INFO:__main__:Part locations: {}
+INFO:__main__:Analysis complete: approved (nudity: 0.00%)
+INFO:werkzeug:127.0.0.1 - - [26/Jul/2025 23:35:12] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753572942309_1753572942309_20250622_003419.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753572942309_1753572942309_20250622_003419.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.8713341951370239, 'box': [633, 49, 785, 869]}, {'class': 'BELLY_EXPOSED', 'score': 0.8691685199737549, 'box': [438, 2302, 1004, 641]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8245043158531189, 'box': [1024, 1401, 654, 730]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8123218417167664, 'box': [147, 1541, 861, 855]}, {'class': 'ARMPITS_EXPOSED', 'score': 0.6061536073684692, 'box': [5, 1268, 305, 430]}]
+INFO:__main__:Detected: FACE_FEMALE at (633, 49) with confidence 87.13%
+INFO:__main__:Detected: BELLY_EXPOSED at (438, 2302) with confidence 86.92%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1024, 1401) with confidence 82.45%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (147, 1541) with confidence 81.23%
+INFO:__main__:Detected: ARMPITS_EXPOSED at (5, 1268) with confidence 60.62%
+INFO:__main__:Analysis complete - Total: 87.13%, Parts: {'breast': 82.45043158531189}
+INFO:__main__:Part locations: {'breast': {'x': 1024, 'y': 1401, 'width': 654, 'height': 730, 'confidence': 82.45}}
+INFO:__main__:Analysis complete: rejected (nudity: 87.13%)
+INFO:werkzeug:127.0.0.1 - - [26/Jul/2025 23:35:46] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753573511868_1753573511868_20250622_003419.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753573511868_1753573511868_20250622_003419.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.8713341951370239, 'box': [633, 49, 785, 869]}, {'class': 'BELLY_EXPOSED', 'score': 0.8691685199737549, 'box': [438, 2302, 1004, 641]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8245043158531189, 'box': [1024, 1401, 654, 730]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8123218417167664, 'box': [147, 1541, 861, 855]}, {'class': 'ARMPITS_EXPOSED', 'score': 0.6061536073684692, 'box': [5, 1268, 305, 430]}]
+INFO:__main__:Detected: FACE_FEMALE at (633, 49) with confidence 87.13%
+INFO:__main__:Detected: BELLY_EXPOSED at (438, 2302) with confidence 86.92%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1024, 1401) with confidence 82.45%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (147, 1541) with confidence 81.23%
+INFO:__main__:Detected: ARMPITS_EXPOSED at (5, 1268) with confidence 60.62%
+INFO:__main__:Analysis complete - Total: 87.13%, Parts: {'breast': 82.45043158531189}
+INFO:__main__:Part locations: {'breast': {'x': 1024, 'y': 1401, 'width': 654, 'height': 730, 'confidence': 82.45}}
+INFO:__main__:Analysis complete: rejected (nudity: 87.13%)
+INFO:werkzeug:127.0.0.1 - - [26/Jul/2025 23:45:14] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753573695255_1753573695254_20250622_003419.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753573695255_1753573695254_20250622_003419.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.8713341951370239, 'box': [633, 49, 785, 869]}, {'class': 'BELLY_EXPOSED', 'score': 0.8691685199737549, 'box': [438, 2302, 1004, 641]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8245043158531189, 'box': [1024, 1401, 654, 730]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8123218417167664, 'box': [147, 1541, 861, 855]}, {'class': 'ARMPITS_EXPOSED', 'score': 0.6061536073684692, 'box': [5, 1268, 305, 430]}]
+INFO:__main__:Detected: FACE_FEMALE at (633, 49) with confidence 87.13%
+INFO:__main__:Detected: BELLY_EXPOSED at (438, 2302) with confidence 86.92%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1024, 1401) with confidence 82.45%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (147, 1541) with confidence 81.23%
+INFO:__main__:Detected: ARMPITS_EXPOSED at (5, 1268) with confidence 60.62%
+INFO:__main__:Analysis complete - Total: 87.13%, Parts: {'breast': 82.45043158531189}
+INFO:__main__:Part locations: {'breast': {'x': 1024, 'y': 1401, 'width': 654, 'height': 730, 'confidence': 82.45}}
+INFO:__main__:Analysis complete: rejected (nudity: 87.13%)
+INFO:werkzeug:127.0.0.1 - - [26/Jul/2025 23:48:18] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753573988723_1753573988722_20250622_003419.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753573988723_1753573988722_20250622_003419.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.8713341951370239, 'box': [633, 49, 785, 869]}, {'class': 'BELLY_EXPOSED', 'score': 0.8691685199737549, 'box': [438, 2302, 1004, 641]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8245043158531189, 'box': [1024, 1401, 654, 730]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8123218417167664, 'box': [147, 1541, 861, 855]}, {'class': 'ARMPITS_EXPOSED', 'score': 0.6061536073684692, 'box': [5, 1268, 305, 430]}]
+INFO:__main__:Detected: FACE_FEMALE at (633, 49) with confidence 87.13%
+INFO:__main__:Detected: BELLY_EXPOSED at (438, 2302) with confidence 86.92%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1024, 1401) with confidence 82.45%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (147, 1541) with confidence 81.23%
+INFO:__main__:Detected: ARMPITS_EXPOSED at (5, 1268) with confidence 60.62%
+INFO:__main__:Analysis complete - Total: 87.13%, Parts: {'breast': 82.45043158531189}
+INFO:__main__:Part locations: {'breast': {'x': 1024, 'y': 1401, 'width': 654, 'height': 730, 'confidence': 82.45}}
+INFO:__main__:Analysis complete: rejected (nudity: 87.13%)
+INFO:werkzeug:127.0.0.1 - - [26/Jul/2025 23:53:12] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753575045179_1753575045179_20250622_003419.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753575045179_1753575045179_20250622_003419.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.8713341951370239, 'box': [633, 49, 785, 869]}, {'class': 'BELLY_EXPOSED', 'score': 0.8691685199737549, 'box': [438, 2302, 1004, 641]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8245043158531189, 'box': [1024, 1401, 654, 730]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8123218417167664, 'box': [147, 1541, 861, 855]}, {'class': 'ARMPITS_EXPOSED', 'score': 0.6061536073684692, 'box': [5, 1268, 305, 430]}]
+INFO:__main__:Detected: FACE_FEMALE at (633, 49) with confidence 87.13%
+INFO:__main__:Detected: BELLY_EXPOSED at (438, 2302) with confidence 86.92%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1024, 1401) with confidence 82.45%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (147, 1541) with confidence 81.23%
+INFO:__main__:Detected: ARMPITS_EXPOSED at (5, 1268) with confidence 60.62%
+INFO:__main__:Analysis complete - Total: 87.13%, Parts: {'breast': 82.45043158531189}
+INFO:__main__:Part locations: {'breast': {'x': 1024, 'y': 1401, 'width': 654, 'height': 730, 'confidence': 82.45}}
+INFO:__main__:Analysis complete: rejected (nudity: 87.13%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 00:10:48] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753575307067_1753575307067_20250622_003419.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753575307067_1753575307067_20250622_003419.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.8713341951370239, 'box': [633, 49, 785, 869]}, {'class': 'BELLY_EXPOSED', 'score': 0.8691685199737549, 'box': [438, 2302, 1004, 641]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8245043158531189, 'box': [1024, 1401, 654, 730]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8123218417167664, 'box': [147, 1541, 861, 855]}, {'class': 'ARMPITS_EXPOSED', 'score': 0.6061536073684692, 'box': [5, 1268, 305, 430]}]
+INFO:__main__:Detected: FACE_FEMALE at (633, 49) with confidence 87.13%
+INFO:__main__:Detected: BELLY_EXPOSED at (438, 2302) with confidence 86.92%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1024, 1401) with confidence 82.45%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (147, 1541) with confidence 81.23%
+INFO:__main__:Detected: ARMPITS_EXPOSED at (5, 1268) with confidence 60.62%
+INFO:__main__:Analysis complete - Total: 87.13%, Parts: {'breast': 82.45043158531189}
+INFO:__main__:Part locations: {'breast': {'x': 1024, 'y': 1401, 'width': 654, 'height': 730, 'confidence': 82.45}}
+INFO:__main__:Analysis complete: rejected (nudity: 87.13%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 00:15:10] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753575429629_1753575429628_20250622_003419.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753575429629_1753575429628_20250622_003419.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.8713341951370239, 'box': [633, 49, 785, 869]}, {'class': 'BELLY_EXPOSED', 'score': 0.8691685199737549, 'box': [438, 2302, 1004, 641]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8245043158531189, 'box': [1024, 1401, 654, 730]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8123218417167664, 'box': [147, 1541, 861, 855]}, {'class': 'ARMPITS_EXPOSED', 'score': 0.6061536073684692, 'box': [5, 1268, 305, 430]}]
+INFO:__main__:Detected: FACE_FEMALE at (633, 49) with confidence 87.13%
+INFO:__main__:Detected: BELLY_EXPOSED at (438, 2302) with confidence 86.92%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1024, 1401) with confidence 82.45%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (147, 1541) with confidence 81.23%
+INFO:__main__:Detected: ARMPITS_EXPOSED at (5, 1268) with confidence 60.62%
+INFO:__main__:Analysis complete - Total: 87.13%, Parts: {'breast': 82.45043158531189}
+INFO:__main__:Part locations: {'breast': {'x': 1024, 'y': 1401, 'width': 654, 'height': 730, 'confidence': 82.45}}
+INFO:__main__:Analysis complete: rejected (nudity: 87.13%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 00:17:12] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753575558687_1753575558687_1753575429628_20250622_003419.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753575558687_1753575558687_1753575429628_20250622_003419.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.8713341951370239, 'box': [633, 49, 785, 869]}, {'class': 'BELLY_EXPOSED', 'score': 0.8691685199737549, 'box': [438, 2302, 1004, 641]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8245043158531189, 'box': [1024, 1401, 654, 730]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8123218417167664, 'box': [147, 1541, 861, 855]}, {'class': 'ARMPITS_EXPOSED', 'score': 0.6061536073684692, 'box': [5, 1268, 305, 430]}]
+INFO:__main__:Detected: FACE_FEMALE at (633, 49) with confidence 87.13%
+INFO:__main__:Detected: BELLY_EXPOSED at (438, 2302) with confidence 86.92%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1024, 1401) with confidence 82.45%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (147, 1541) with confidence 81.23%
+INFO:__main__:Detected: ARMPITS_EXPOSED at (5, 1268) with confidence 60.62%
+INFO:__main__:Analysis complete - Total: 87.13%, Parts: {'breast': 82.45043158531189}
+INFO:__main__:Part locations: {'breast': {'x': 1024, 'y': 1401, 'width': 654, 'height': 730, 'confidence': 82.45}}
+INFO:__main__:Analysis complete: rejected (nudity: 87.13%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 00:19:21] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753575565832_1753575565832_20250622_003419.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753575565832_1753575565832_20250622_003419.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.8713341951370239, 'box': [633, 49, 785, 869]}, {'class': 'BELLY_EXPOSED', 'score': 0.8691685199737549, 'box': [438, 2302, 1004, 641]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8245043158531189, 'box': [1024, 1401, 654, 730]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8123218417167664, 'box': [147, 1541, 861, 855]}, {'class': 'ARMPITS_EXPOSED', 'score': 0.6061536073684692, 'box': [5, 1268, 305, 430]}]
+INFO:__main__:Detected: FACE_FEMALE at (633, 49) with confidence 87.13%
+INFO:__main__:Detected: BELLY_EXPOSED at (438, 2302) with confidence 86.92%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1024, 1401) with confidence 82.45%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (147, 1541) with confidence 81.23%
+INFO:__main__:Detected: ARMPITS_EXPOSED at (5, 1268) with confidence 60.62%
+INFO:__main__:Analysis complete - Total: 87.13%, Parts: {'breast': 82.45043158531189}
+INFO:__main__:Part locations: {'breast': {'x': 1024, 'y': 1401, 'width': 654, 'height': 730, 'confidence': 82.45}}
+INFO:__main__:Analysis complete: rejected (nudity: 87.13%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 00:19:28] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753575572332_1753575572332_20250622_003419.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753575572332_1753575572332_20250622_003419.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.8713341951370239, 'box': [633, 49, 785, 869]}, {'class': 'BELLY_EXPOSED', 'score': 0.8691685199737549, 'box': [438, 2302, 1004, 641]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8245043158531189, 'box': [1024, 1401, 654, 730]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8123218417167664, 'box': [147, 1541, 861, 855]}, {'class': 'ARMPITS_EXPOSED', 'score': 0.6061536073684692, 'box': [5, 1268, 305, 430]}]
+INFO:__main__:Detected: FACE_FEMALE at (633, 49) with confidence 87.13%
+INFO:__main__:Detected: BELLY_EXPOSED at (438, 2302) with confidence 86.92%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1024, 1401) with confidence 82.45%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (147, 1541) with confidence 81.23%
+INFO:__main__:Detected: ARMPITS_EXPOSED at (5, 1268) with confidence 60.62%
+INFO:__main__:Analysis complete - Total: 87.13%, Parts: {'breast': 82.45043158531189}
+INFO:__main__:Part locations: {'breast': {'x': 1024, 'y': 1401, 'width': 654, 'height': 730, 'confidence': 82.45}}
+INFO:__main__:Analysis complete: rejected (nudity: 87.13%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 00:19:35] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753575902667_1753575902666_20250622_003419.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753575902667_1753575902666_20250622_003419.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.8713341951370239, 'box': [633, 49, 785, 869]}, {'class': 'BELLY_EXPOSED', 'score': 0.8691685199737549, 'box': [438, 2302, 1004, 641]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8245043158531189, 'box': [1024, 1401, 654, 730]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8123218417167664, 'box': [147, 1541, 861, 855]}, {'class': 'ARMPITS_EXPOSED', 'score': 0.6061536073684692, 'box': [5, 1268, 305, 430]}]
+INFO:__main__:Detected: FACE_FEMALE at (633, 49) with confidence 87.13%
+INFO:__main__:Detected: BELLY_EXPOSED at (438, 2302) with confidence 86.92%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1024, 1401) with confidence 82.45%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (147, 1541) with confidence 81.23%
+INFO:__main__:Detected: ARMPITS_EXPOSED at (5, 1268) with confidence 60.62%
+INFO:__main__:Analysis complete - Total: 87.13%, Parts: {'breast': 82.45043158531189}
+INFO:__main__:Part locations: {'breast': {'x': 1024, 'y': 1401, 'width': 654, 'height': 730, 'confidence': 82.45}}
+INFO:__main__:Analysis complete: rejected (nudity: 87.13%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 00:25:05] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753575906788_1753575906787_20250622_003419.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753575906788_1753575906787_20250622_003419.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.8713341951370239, 'box': [633, 49, 785, 869]}, {'class': 'BELLY_EXPOSED', 'score': 0.8691685199737549, 'box': [438, 2302, 1004, 641]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8245043158531189, 'box': [1024, 1401, 654, 730]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8123218417167664, 'box': [147, 1541, 861, 855]}, {'class': 'ARMPITS_EXPOSED', 'score': 0.6061536073684692, 'box': [5, 1268, 305, 430]}]
+INFO:__main__:Detected: FACE_FEMALE at (633, 49) with confidence 87.13%
+INFO:__main__:Detected: BELLY_EXPOSED at (438, 2302) with confidence 86.92%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1024, 1401) with confidence 82.45%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (147, 1541) with confidence 81.23%
+INFO:__main__:Detected: ARMPITS_EXPOSED at (5, 1268) with confidence 60.62%
+INFO:__main__:Analysis complete - Total: 87.13%, Parts: {'breast': 82.45043158531189}
+INFO:__main__:Part locations: {'breast': {'x': 1024, 'y': 1401, 'width': 654, 'height': 730, 'confidence': 82.45}}
+INFO:__main__:Analysis complete: rejected (nudity: 87.13%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 00:25:12] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753575913536_1753575913536_20250622_003419.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753575913536_1753575913536_20250622_003419.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.8713341951370239, 'box': [633, 49, 785, 869]}, {'class': 'BELLY_EXPOSED', 'score': 0.8691685199737549, 'box': [438, 2302, 1004, 641]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8245043158531189, 'box': [1024, 1401, 654, 730]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8123218417167664, 'box': [147, 1541, 861, 855]}, {'class': 'ARMPITS_EXPOSED', 'score': 0.6061536073684692, 'box': [5, 1268, 305, 430]}]
+INFO:__main__:Detected: FACE_FEMALE at (633, 49) with confidence 87.13%
+INFO:__main__:Detected: BELLY_EXPOSED at (438, 2302) with confidence 86.92%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1024, 1401) with confidence 82.45%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (147, 1541) with confidence 81.23%
+INFO:__main__:Detected: ARMPITS_EXPOSED at (5, 1268) with confidence 60.62%
+INFO:__main__:Analysis complete - Total: 87.13%, Parts: {'breast': 82.45043158531189}
+INFO:__main__:Part locations: {'breast': {'x': 1024, 'y': 1401, 'width': 654, 'height': 730, 'confidence': 82.45}}
+INFO:__main__:Analysis complete: rejected (nudity: 87.13%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 00:25:16] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753575918817_1753575918817_20250622_003419.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753575918817_1753575918817_20250622_003419.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.8713341951370239, 'box': [633, 49, 785, 869]}, {'class': 'BELLY_EXPOSED', 'score': 0.8691685199737549, 'box': [438, 2302, 1004, 641]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8245043158531189, 'box': [1024, 1401, 654, 730]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8123218417167664, 'box': [147, 1541, 861, 855]}, {'class': 'ARMPITS_EXPOSED', 'score': 0.6061536073684692, 'box': [5, 1268, 305, 430]}]
+INFO:__main__:Detected: FACE_FEMALE at (633, 49) with confidence 87.13%
+INFO:__main__:Detected: BELLY_EXPOSED at (438, 2302) with confidence 86.92%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1024, 1401) with confidence 82.45%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (147, 1541) with confidence 81.23%
+INFO:__main__:Detected: ARMPITS_EXPOSED at (5, 1268) with confidence 60.62%
+INFO:__main__:Analysis complete - Total: 87.13%, Parts: {'breast': 82.45043158531189}
+INFO:__main__:Part locations: {'breast': {'x': 1024, 'y': 1401, 'width': 654, 'height': 730, 'confidence': 82.45}}
+INFO:__main__:Analysis complete: rejected (nudity: 87.13%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 00:25:21] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753576944698_1753576944697_20230703_111632.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753576944698_1753576944697_20230703_111632.jpg
+INFO:__main__:NudeNet detections: [{'class': 'BUTTOCKS_EXPOSED', 'score': 0.6740303635597229, 'box': [447, 1642, 2025, 1440]}, {'class': 'FEMALE_GENITALIA_EXPOSED', 'score': 0.5641533136367798, 'box': [1214, 2523, 393, 480]}]
+INFO:__main__:Detected: BUTTOCKS_EXPOSED at (447, 1642) with confidence 67.40%
+INFO:__main__:Detected: FEMALE_GENITALIA_EXPOSED at (1214, 2523) with confidence 56.42%
+INFO:__main__:Analysis complete - Total: 67.40%, Parts: {'buttocks': 67.40303635597229, 'genitalia': 56.41533136367798}
+INFO:__main__:Part locations: {'buttocks': {'x': 447, 'y': 1642, 'width': 2025, 'height': 1440, 'confidence': 67.4}, 'genitalia': {'x': 1214, 'y': 2523, 'width': 393, 'height': 480, 'confidence': 56.42}}
+INFO:__main__:Analysis complete: rejected (nudity: 67.40%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 00:42:27] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753576949025_1753576949024_20230703_111632.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753576949025_1753576949024_20230703_111632.jpg
+INFO:__main__:NudeNet detections: [{'class': 'BUTTOCKS_EXPOSED', 'score': 0.6740303635597229, 'box': [447, 1642, 2025, 1440]}, {'class': 'FEMALE_GENITALIA_EXPOSED', 'score': 0.5641533136367798, 'box': [1214, 2523, 393, 480]}]
+INFO:__main__:Detected: BUTTOCKS_EXPOSED at (447, 1642) with confidence 67.40%
+INFO:__main__:Detected: FEMALE_GENITALIA_EXPOSED at (1214, 2523) with confidence 56.42%
+INFO:__main__:Analysis complete - Total: 67.40%, Parts: {'buttocks': 67.40303635597229, 'genitalia': 56.41533136367798}
+INFO:__main__:Part locations: {'buttocks': {'x': 447, 'y': 1642, 'width': 2025, 'height': 1440, 'confidence': 67.4}, 'genitalia': {'x': 1214, 'y': 2523, 'width': 393, 'height': 480, 'confidence': 56.42}}
+INFO:__main__:Analysis complete: rejected (nudity: 67.40%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 00:42:37] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753576967386_1753576967385_20250712_212448.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753576967386_1753576967385_20250712_212448.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.8120414018630981, 'box': [1273, 837, 446, 460]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8057643175125122, 'box': [1534, 1558, 440, 464]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.7537797093391418, 'box': [1024, 1616, 445, 462]}, {'class': 'BELLY_EXPOSED', 'score': 0.7392187714576721, 'box': [1253, 2069, 646, 483]}, {'class': 'FEMALE_GENITALIA_COVERED', 'score': 0.5536690950393677, 'box': [1470, 2603, 264, 223]}]
+INFO:__main__:Detected: FACE_FEMALE at (1273, 837) with confidence 81.20%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1534, 1558) with confidence 80.58%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1024, 1616) with confidence 75.38%
+INFO:__main__:Detected: BELLY_EXPOSED at (1253, 2069) with confidence 73.92%
+INFO:__main__:Detected: FEMALE_GENITALIA_COVERED at (1470, 2603) with confidence 55.37%
+INFO:__main__:Analysis complete - Total: 81.20%, Parts: {'breast': 80.57643175125122}
+INFO:__main__:Part locations: {'breast': {'x': 1534, 'y': 1558, 'width': 440, 'height': 464, 'confidence': 80.58}}
+INFO:__main__:Analysis complete: rejected (nudity: 81.20%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 00:42:50] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753577542859_1753577542859_20250712_212448.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753577542859_1753577542859_20250712_212448.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.8120414018630981, 'box': [1273, 837, 446, 460]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8057643175125122, 'box': [1534, 1558, 440, 464]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.7537797093391418, 'box': [1024, 1616, 445, 462]}, {'class': 'BELLY_EXPOSED', 'score': 0.7392187714576721, 'box': [1253, 2069, 646, 483]}, {'class': 'FEMALE_GENITALIA_COVERED', 'score': 0.5536690950393677, 'box': [1470, 2603, 264, 223]}]
+INFO:__main__:Detected: FACE_FEMALE at (1273, 837) with confidence 81.20%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1534, 1558) with confidence 80.58%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1024, 1616) with confidence 75.38%
+INFO:__main__:Detected: BELLY_EXPOSED at (1253, 2069) with confidence 73.92%
+INFO:__main__:Detected: FEMALE_GENITALIA_COVERED at (1470, 2603) with confidence 55.37%
+INFO:__main__:Analysis complete - Total: 81.20%, Parts: {'breast': 80.57643175125122}
+INFO:__main__:Part locations: {'breast': {'x': 1534, 'y': 1558, 'width': 440, 'height': 464, 'confidence': 80.58}}
+INFO:__main__:Analysis complete: rejected (nudity: 81.20%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 00:52:26] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753577547145_1753577547145_20250712_212448.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753577547145_1753577547145_20250712_212448.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.8120414018630981, 'box': [1273, 837, 446, 460]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8057643175125122, 'box': [1534, 1558, 440, 464]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.7537797093391418, 'box': [1024, 1616, 445, 462]}, {'class': 'BELLY_EXPOSED', 'score': 0.7392187714576721, 'box': [1253, 2069, 646, 483]}, {'class': 'FEMALE_GENITALIA_COVERED', 'score': 0.5536690950393677, 'box': [1470, 2603, 264, 223]}]
+INFO:__main__:Detected: FACE_FEMALE at (1273, 837) with confidence 81.20%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1534, 1558) with confidence 80.58%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1024, 1616) with confidence 75.38%
+INFO:__main__:Detected: BELLY_EXPOSED at (1253, 2069) with confidence 73.92%
+INFO:__main__:Detected: FEMALE_GENITALIA_COVERED at (1470, 2603) with confidence 55.37%
+INFO:__main__:Analysis complete - Total: 81.20%, Parts: {'breast': 80.57643175125122}
+INFO:__main__:Part locations: {'breast': {'x': 1534, 'y': 1558, 'width': 440, 'height': 464, 'confidence': 80.58}}
+INFO:__main__:Analysis complete: rejected (nudity: 81.20%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 00:52:33] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753577807046_1753577807045_20250712_212448.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753577807046_1753577807045_20250712_212448.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.8120414018630981, 'box': [1273, 837, 446, 460]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8057643175125122, 'box': [1534, 1558, 440, 464]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.7537797093391418, 'box': [1024, 1616, 445, 462]}, {'class': 'BELLY_EXPOSED', 'score': 0.7392187714576721, 'box': [1253, 2069, 646, 483]}, {'class': 'FEMALE_GENITALIA_COVERED', 'score': 0.5536690950393677, 'box': [1470, 2603, 264, 223]}]
+INFO:__main__:Detected: FACE_FEMALE at (1273, 837) with confidence 81.20%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1534, 1558) with confidence 80.58%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1024, 1616) with confidence 75.38%
+INFO:__main__:Detected: BELLY_EXPOSED at (1253, 2069) with confidence 73.92%
+INFO:__main__:Detected: FEMALE_GENITALIA_COVERED at (1470, 2603) with confidence 55.37%
+INFO:__main__:Analysis complete - Total: 81.20%, Parts: {'breast': 80.57643175125122}
+INFO:__main__:Part locations: {'breast': {'x': 1534, 'y': 1558, 'width': 440, 'height': 464, 'confidence': 80.58}}
+INFO:__main__:Analysis complete: rejected (nudity: 81.20%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 00:56:50] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753577818215_1753577818214_20230703_111727.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753577818215_1753577818214_20230703_111727.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.7875638008117676, 'box': [1660, 1561, 1059, 1006]}, {'class': 'MALE_GENITALIA_EXPOSED', 'score': 0.26578259468078613, 'box': [2068, 2341, 538, 643]}]
+INFO:__main__:Detected: FACE_FEMALE at (1660, 1561) with confidence 78.76%
+INFO:__main__:Detected: MALE_GENITALIA_EXPOSED at (2068, 2341) with confidence 26.58%
+INFO:__main__:Analysis complete - Total: 78.76%, Parts: {'genitalia': 26.578259468078613}
+INFO:__main__:Part locations: {'genitalia': {'x': 2068, 'y': 2341, 'width': 538, 'height': 643, 'confidence': 26.58}}
+INFO:__main__:Analysis complete: rejected (nudity: 78.76%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 00:57:01] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753577824413_1753577824413_20230703_111727.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753577824413_1753577824413_20230703_111727.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.7875638008117676, 'box': [1660, 1561, 1059, 1006]}, {'class': 'MALE_GENITALIA_EXPOSED', 'score': 0.26578259468078613, 'box': [2068, 2341, 538, 643]}]
+INFO:__main__:Detected: FACE_FEMALE at (1660, 1561) with confidence 78.76%
+INFO:__main__:Detected: MALE_GENITALIA_EXPOSED at (2068, 2341) with confidence 26.58%
+INFO:__main__:Analysis complete - Total: 78.76%, Parts: {'genitalia': 26.578259468078613}
+INFO:__main__:Part locations: {'genitalia': {'x': 2068, 'y': 2341, 'width': 538, 'height': 643, 'confidence': 26.58}}
+INFO:__main__:Analysis complete: rejected (nudity: 78.76%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 00:57:07] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753577833626_1753577833626_20230703_111727.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753577833626_1753577833626_20230703_111727.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.7875638008117676, 'box': [1660, 1561, 1059, 1006]}, {'class': 'MALE_GENITALIA_EXPOSED', 'score': 0.26578259468078613, 'box': [2068, 2341, 538, 643]}]
+INFO:__main__:Detected: FACE_FEMALE at (1660, 1561) with confidence 78.76%
+INFO:__main__:Detected: MALE_GENITALIA_EXPOSED at (2068, 2341) with confidence 26.58%
+INFO:__main__:Analysis complete - Total: 78.76%, Parts: {'genitalia': 26.578259468078613}
+INFO:__main__:Part locations: {'genitalia': {'x': 2068, 'y': 2341, 'width': 538, 'height': 643, 'confidence': 26.58}}
+INFO:__main__:Analysis complete: rejected (nudity: 78.76%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 00:57:16] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753578479963_1753578479962_20230703_111727.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753578479963_1753578479962_20230703_111727.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.7875638008117676, 'box': [1660, 1561, 1059, 1006]}, {'class': 'MALE_GENITALIA_EXPOSED', 'score': 0.26578259468078613, 'box': [2068, 2341, 538, 643]}]
+INFO:__main__:Detected: FACE_FEMALE at (1660, 1561) with confidence 78.76%
+INFO:__main__:Detected: MALE_GENITALIA_EXPOSED at (2068, 2341) with confidence 26.58%
+INFO:__main__:Analysis complete - Total: 78.76%, Parts: {'genitalia': 26.578259468078613}
+INFO:__main__:Part locations: {'genitalia': {'x': 2068, 'y': 2341, 'width': 538, 'height': 643, 'confidence': 26.58}}
+INFO:__main__:Analysis complete: rejected (nudity: 78.76%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 01:08:03] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753578484401_1753578484401_20230703_111727.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753578484401_1753578484401_20230703_111727.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.7875638008117676, 'box': [1660, 1561, 1059, 1006]}, {'class': 'MALE_GENITALIA_EXPOSED', 'score': 0.26578259468078613, 'box': [2068, 2341, 538, 643]}]
+INFO:__main__:Detected: FACE_FEMALE at (1660, 1561) with confidence 78.76%
+INFO:__main__:Detected: MALE_GENITALIA_EXPOSED at (2068, 2341) with confidence 26.58%
+INFO:__main__:Analysis complete - Total: 78.76%, Parts: {'genitalia': 26.578259468078613}
+INFO:__main__:Part locations: {'genitalia': {'x': 2068, 'y': 2341, 'width': 538, 'height': 643, 'confidence': 26.58}}
+INFO:__main__:Analysis complete: rejected (nudity: 78.76%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 01:08:07] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753578899627_1753578899626_20230703_111727.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753578899627_1753578899626_20230703_111727.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.7875638008117676, 'box': [1660, 1561, 1059, 1006]}, {'class': 'MALE_GENITALIA_EXPOSED', 'score': 0.26578259468078613, 'box': [2068, 2341, 538, 643]}]
+INFO:__main__:Detected: FACE_FEMALE at (1660, 1561) with confidence 78.76%
+INFO:__main__:Detected: MALE_GENITALIA_EXPOSED at (2068, 2341) with confidence 26.58%
+INFO:__main__:Analysis complete - Total: 78.76%, Parts: {'genitalia': 26.578259468078613}
+INFO:__main__:Part locations: {'genitalia': {'x': 2068, 'y': 2341, 'width': 538, 'height': 643, 'confidence': 26.58}}
+INFO:__main__:Analysis complete: rejected (nudity: 78.76%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 01:15:03] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753578937683_1753578937682_20230703_111727.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753578937683_1753578937682_20230703_111727.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.7875638008117676, 'box': [1660, 1561, 1059, 1006]}, {'class': 'MALE_GENITALIA_EXPOSED', 'score': 0.26578259468078613, 'box': [2068, 2341, 538, 643]}]
+INFO:__main__:Detected: FACE_FEMALE at (1660, 1561) with confidence 78.76%
+INFO:__main__:Detected: MALE_GENITALIA_EXPOSED at (2068, 2341) with confidence 26.58%
+INFO:__main__:Analysis complete - Total: 78.76%, Parts: {'genitalia': 26.578259468078613}
+INFO:__main__:Part locations: {'genitalia': {'x': 2068, 'y': 2341, 'width': 538, 'height': 643, 'confidence': 26.58}}
+INFO:__main__:Analysis complete: rejected (nudity: 78.76%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 01:15:40] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753578942142_1753578942142_20230703_111727.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753578942142_1753578942142_20230703_111727.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.7875638008117676, 'box': [1660, 1561, 1059, 1006]}, {'class': 'MALE_GENITALIA_EXPOSED', 'score': 0.26578259468078613, 'box': [2068, 2341, 538, 643]}]
+INFO:__main__:Detected: FACE_FEMALE at (1660, 1561) with confidence 78.76%
+INFO:__main__:Detected: MALE_GENITALIA_EXPOSED at (2068, 2341) with confidence 26.58%
+INFO:__main__:Analysis complete - Total: 78.76%, Parts: {'genitalia': 26.578259468078613}
+INFO:__main__:Part locations: {'genitalia': {'x': 2068, 'y': 2341, 'width': 538, 'height': 643, 'confidence': 26.58}}
+INFO:__main__:Analysis complete: rejected (nudity: 78.76%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 01:15:45] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753578945704_1753578945704_20230703_111727.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753578945704_1753578945704_20230703_111727.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.7875638008117676, 'box': [1660, 1561, 1059, 1006]}, {'class': 'MALE_GENITALIA_EXPOSED', 'score': 0.26578259468078613, 'box': [2068, 2341, 538, 643]}]
+INFO:__main__:Detected: FACE_FEMALE at (1660, 1561) with confidence 78.76%
+INFO:__main__:Detected: MALE_GENITALIA_EXPOSED at (2068, 2341) with confidence 26.58%
+INFO:__main__:Analysis complete - Total: 78.76%, Parts: {'genitalia': 26.578259468078613}
+INFO:__main__:Part locations: {'genitalia': {'x': 2068, 'y': 2341, 'width': 538, 'height': 643, 'confidence': 26.58}}
+INFO:__main__:Analysis complete: rejected (nudity: 78.76%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 01:15:48] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753578949072_1753578949071_20230703_111727.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753578949072_1753578949071_20230703_111727.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.7875638008117676, 'box': [1660, 1561, 1059, 1006]}, {'class': 'MALE_GENITALIA_EXPOSED', 'score': 0.26578259468078613, 'box': [2068, 2341, 538, 643]}]
+INFO:__main__:Detected: FACE_FEMALE at (1660, 1561) with confidence 78.76%
+INFO:__main__:Detected: MALE_GENITALIA_EXPOSED at (2068, 2341) with confidence 26.58%
+INFO:__main__:Analysis complete - Total: 78.76%, Parts: {'genitalia': 26.578259468078613}
+INFO:__main__:Part locations: {'genitalia': {'x': 2068, 'y': 2341, 'width': 538, 'height': 643, 'confidence': 26.58}}
+INFO:__main__:Analysis complete: rejected (nudity: 78.76%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 01:15:52] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753579679702_1753579679701_20230703_111727.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753579679702_1753579679701_20230703_111727.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.7875638008117676, 'box': [1660, 1561, 1059, 1006]}, {'class': 'MALE_GENITALIA_EXPOSED', 'score': 0.26578259468078613, 'box': [2068, 2341, 538, 643]}]
+INFO:__main__:Detected: FACE_FEMALE at (1660, 1561) with confidence 78.76%
+INFO:__main__:Detected: MALE_GENITALIA_EXPOSED at (2068, 2341) with confidence 26.58%
+INFO:__main__:Analysis complete - Total: 78.76%, Parts: {'genitalia': 26.578259468078613}
+INFO:__main__:Part locations: {'genitalia': {'x': 2068, 'y': 2341, 'width': 538, 'height': 643, 'confidence': 26.58}}
+INFO:__main__:Analysis complete: rejected (nudity: 78.76%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 01:28:03] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753579683927_1753579683927_20230703_111727.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753579683927_1753579683927_20230703_111727.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.7875638008117676, 'box': [1660, 1561, 1059, 1006]}, {'class': 'MALE_GENITALIA_EXPOSED', 'score': 0.26578259468078613, 'box': [2068, 2341, 538, 643]}]
+INFO:__main__:Detected: FACE_FEMALE at (1660, 1561) with confidence 78.76%
+INFO:__main__:Detected: MALE_GENITALIA_EXPOSED at (2068, 2341) with confidence 26.58%
+INFO:__main__:Analysis complete - Total: 78.76%, Parts: {'genitalia': 26.578259468078613}
+INFO:__main__:Part locations: {'genitalia': {'x': 2068, 'y': 2341, 'width': 538, 'height': 643, 'confidence': 26.58}}
+INFO:__main__:Analysis complete: rejected (nudity: 78.76%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 01:28:06] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753579687479_1753579687478_20230703_111727.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753579687479_1753579687478_20230703_111727.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.7875638008117676, 'box': [1660, 1561, 1059, 1006]}, {'class': 'MALE_GENITALIA_EXPOSED', 'score': 0.26578259468078613, 'box': [2068, 2341, 538, 643]}]
+INFO:__main__:Detected: FACE_FEMALE at (1660, 1561) with confidence 78.76%
+INFO:__main__:Detected: MALE_GENITALIA_EXPOSED at (2068, 2341) with confidence 26.58%
+INFO:__main__:Analysis complete - Total: 78.76%, Parts: {'genitalia': 26.578259468078613}
+INFO:__main__:Part locations: {'genitalia': {'x': 2068, 'y': 2341, 'width': 538, 'height': 643, 'confidence': 26.58}}
+INFO:__main__:Analysis complete: rejected (nudity: 78.76%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 01:28:10] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753579697653_1753579697653_20250622_003419.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753579697653_1753579697653_20250622_003419.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.8713341951370239, 'box': [633, 49, 785, 869]}, {'class': 'BELLY_EXPOSED', 'score': 0.8691685199737549, 'box': [438, 2302, 1004, 641]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8245043158531189, 'box': [1024, 1401, 654, 730]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8123218417167664, 'box': [147, 1541, 861, 855]}, {'class': 'ARMPITS_EXPOSED', 'score': 0.6061536073684692, 'box': [5, 1268, 305, 430]}]
+INFO:__main__:Detected: FACE_FEMALE at (633, 49) with confidence 87.13%
+INFO:__main__:Detected: BELLY_EXPOSED at (438, 2302) with confidence 86.92%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1024, 1401) with confidence 82.45%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (147, 1541) with confidence 81.23%
+INFO:__main__:Detected: ARMPITS_EXPOSED at (5, 1268) with confidence 60.62%
+INFO:__main__:Analysis complete - Total: 87.13%, Parts: {'breast': 82.45043158531189}
+INFO:__main__:Part locations: {'breast': {'x': 1024, 'y': 1401, 'width': 654, 'height': 730, 'confidence': 82.45}}
+INFO:__main__:Analysis complete: rejected (nudity: 87.13%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 01:28:19] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753579705336_1753579705336_20250622_003419.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753579705336_1753579705336_20250622_003419.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.8713341951370239, 'box': [633, 49, 785, 869]}, {'class': 'BELLY_EXPOSED', 'score': 0.8691685199737549, 'box': [438, 2302, 1004, 641]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8245043158531189, 'box': [1024, 1401, 654, 730]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8123218417167664, 'box': [147, 1541, 861, 855]}, {'class': 'ARMPITS_EXPOSED', 'score': 0.6061536073684692, 'box': [5, 1268, 305, 430]}]
+INFO:__main__:Detected: FACE_FEMALE at (633, 49) with confidence 87.13%
+INFO:__main__:Detected: BELLY_EXPOSED at (438, 2302) with confidence 86.92%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1024, 1401) with confidence 82.45%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (147, 1541) with confidence 81.23%
+INFO:__main__:Detected: ARMPITS_EXPOSED at (5, 1268) with confidence 60.62%
+INFO:__main__:Analysis complete - Total: 87.13%, Parts: {'breast': 82.45043158531189}
+INFO:__main__:Part locations: {'breast': {'x': 1024, 'y': 1401, 'width': 654, 'height': 730, 'confidence': 82.45}}
+INFO:__main__:Analysis complete: rejected (nudity: 87.13%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 01:28:27] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753579705436_1753579705436_20250622_003419.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753579705436_1753579705436_20250622_003419.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.8713341951370239, 'box': [633, 49, 785, 869]}, {'class': 'BELLY_EXPOSED', 'score': 0.8691685199737549, 'box': [438, 2302, 1004, 641]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8245043158531189, 'box': [1024, 1401, 654, 730]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8123218417167664, 'box': [147, 1541, 861, 855]}, {'class': 'ARMPITS_EXPOSED', 'score': 0.6061536073684692, 'box': [5, 1268, 305, 430]}]
+INFO:__main__:Detected: FACE_FEMALE at (633, 49) with confidence 87.13%
+INFO:__main__:Detected: BELLY_EXPOSED at (438, 2302) with confidence 86.92%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1024, 1401) with confidence 82.45%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (147, 1541) with confidence 81.23%
+INFO:__main__:Detected: ARMPITS_EXPOSED at (5, 1268) with confidence 60.62%
+INFO:__main__:Analysis complete - Total: 87.13%, Parts: {'breast': 82.45043158531189}
+INFO:__main__:Part locations: {'breast': {'x': 1024, 'y': 1401, 'width': 654, 'height': 730, 'confidence': 82.45}}
+INFO:__main__:Analysis complete: rejected (nudity: 87.13%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 01:28:27] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753579725542_1753579725542_20250622_003419.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753579725542_1753579725542_20250622_003419.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.8713341951370239, 'box': [633, 49, 785, 869]}, {'class': 'BELLY_EXPOSED', 'score': 0.8691685199737549, 'box': [438, 2302, 1004, 641]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8245043158531189, 'box': [1024, 1401, 654, 730]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8123218417167664, 'box': [147, 1541, 861, 855]}, {'class': 'ARMPITS_EXPOSED', 'score': 0.6061536073684692, 'box': [5, 1268, 305, 430]}]
+INFO:__main__:Detected: FACE_FEMALE at (633, 49) with confidence 87.13%
+INFO:__main__:Detected: BELLY_EXPOSED at (438, 2302) with confidence 86.92%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1024, 1401) with confidence 82.45%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (147, 1541) with confidence 81.23%
+INFO:__main__:Detected: ARMPITS_EXPOSED at (5, 1268) with confidence 60.62%
+INFO:__main__:Analysis complete - Total: 87.13%, Parts: {'breast': 82.45043158531189}
+INFO:__main__:Part locations: {'breast': {'x': 1024, 'y': 1401, 'width': 654, 'height': 730, 'confidence': 82.45}}
+INFO:__main__:Analysis complete: rejected (nudity: 87.13%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 01:28:48] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753580136441_1753580136440_20250622_003419.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753580136441_1753580136440_20250622_003419.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.8713341951370239, 'box': [633, 49, 785, 869]}, {'class': 'BELLY_EXPOSED', 'score': 0.8691685199737549, 'box': [438, 2302, 1004, 641]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8245043158531189, 'box': [1024, 1401, 654, 730]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8123218417167664, 'box': [147, 1541, 861, 855]}, {'class': 'ARMPITS_EXPOSED', 'score': 0.6061536073684692, 'box': [5, 1268, 305, 430]}]
+INFO:__main__:Detected: FACE_FEMALE at (633, 49) with confidence 87.13%
+INFO:__main__:Detected: BELLY_EXPOSED at (438, 2302) with confidence 86.92%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1024, 1401) with confidence 82.45%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (147, 1541) with confidence 81.23%
+INFO:__main__:Detected: ARMPITS_EXPOSED at (5, 1268) with confidence 60.62%
+INFO:__main__:Analysis complete - Total: 87.13%, Parts: {'breast': 82.45043158531189}
+INFO:__main__:Part locations: {'breast': {'x': 1024, 'y': 1401, 'width': 654, 'height': 730, 'confidence': 82.45}}
+INFO:__main__:Analysis complete: rejected (nudity: 87.13%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 01:35:39] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753580140053_1753580140053_20250622_003419.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753580140053_1753580140053_20250622_003419.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.8713341951370239, 'box': [633, 49, 785, 869]}, {'class': 'BELLY_EXPOSED', 'score': 0.8691685199737549, 'box': [438, 2302, 1004, 641]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8245043158531189, 'box': [1024, 1401, 654, 730]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8123218417167664, 'box': [147, 1541, 861, 855]}, {'class': 'ARMPITS_EXPOSED', 'score': 0.6061536073684692, 'box': [5, 1268, 305, 430]}]
+INFO:__main__:Detected: FACE_FEMALE at (633, 49) with confidence 87.13%
+INFO:__main__:Detected: BELLY_EXPOSED at (438, 2302) with confidence 86.92%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1024, 1401) with confidence 82.45%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (147, 1541) with confidence 81.23%
+INFO:__main__:Detected: ARMPITS_EXPOSED at (5, 1268) with confidence 60.62%
+INFO:__main__:Analysis complete - Total: 87.13%, Parts: {'breast': 82.45043158531189}
+INFO:__main__:Part locations: {'breast': {'x': 1024, 'y': 1401, 'width': 654, 'height': 730, 'confidence': 82.45}}
+INFO:__main__:Analysis complete: rejected (nudity: 87.13%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 01:35:42] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753603198903_1753603198903_20250622_003419.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753603198903_1753603198903_20250622_003419.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.8713341951370239, 'box': [633, 49, 785, 869]}, {'class': 'BELLY_EXPOSED', 'score': 0.8691685199737549, 'box': [438, 2302, 1004, 641]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8245043158531189, 'box': [1024, 1401, 654, 730]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8123218417167664, 'box': [147, 1541, 861, 855]}, {'class': 'ARMPITS_EXPOSED', 'score': 0.6061536073684692, 'box': [5, 1268, 305, 430]}]
+INFO:__main__:Detected: FACE_FEMALE at (633, 49) with confidence 87.13%
+INFO:__main__:Detected: BELLY_EXPOSED at (438, 2302) with confidence 86.92%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1024, 1401) with confidence 82.45%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (147, 1541) with confidence 81.23%
+INFO:__main__:Detected: ARMPITS_EXPOSED at (5, 1268) with confidence 60.62%
+INFO:__main__:Analysis complete - Total: 87.13%, Parts: {'breast': 82.45043158531189}
+INFO:__main__:Part locations: {'breast': {'x': 1024, 'y': 1401, 'width': 654, 'height': 730, 'confidence': 82.45}}
+INFO:__main__:Analysis complete: rejected (nudity: 87.13%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 08:00:03] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753603205929_1753603205929_20250622_003419.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753603205929_1753603205929_20250622_003419.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.8713341951370239, 'box': [633, 49, 785, 869]}, {'class': 'BELLY_EXPOSED', 'score': 0.8691685199737549, 'box': [438, 2302, 1004, 641]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8245043158531189, 'box': [1024, 1401, 654, 730]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8123218417167664, 'box': [147, 1541, 861, 855]}, {'class': 'ARMPITS_EXPOSED', 'score': 0.6061536073684692, 'box': [5, 1268, 305, 430]}]
+INFO:__main__:Detected: FACE_FEMALE at (633, 49) with confidence 87.13%
+INFO:__main__:Detected: BELLY_EXPOSED at (438, 2302) with confidence 86.92%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1024, 1401) with confidence 82.45%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (147, 1541) with confidence 81.23%
+INFO:__main__:Detected: ARMPITS_EXPOSED at (5, 1268) with confidence 60.62%
+INFO:__main__:Analysis complete - Total: 87.13%, Parts: {'breast': 82.45043158531189}
+INFO:__main__:Part locations: {'breast': {'x': 1024, 'y': 1401, 'width': 654, 'height': 730, 'confidence': 82.45}}
+INFO:__main__:Analysis complete: rejected (nudity: 87.13%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 08:00:08] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753603328191_1753603328190_20250622_003419.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753603328191_1753603328190_20250622_003419.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.8713341951370239, 'box': [633, 49, 785, 869]}, {'class': 'BELLY_EXPOSED', 'score': 0.8691685199737549, 'box': [438, 2302, 1004, 641]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8245043158531189, 'box': [1024, 1401, 654, 730]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8123218417167664, 'box': [147, 1541, 861, 855]}, {'class': 'ARMPITS_EXPOSED', 'score': 0.6061536073684692, 'box': [5, 1268, 305, 430]}]
+INFO:__main__:Detected: FACE_FEMALE at (633, 49) with confidence 87.13%
+INFO:__main__:Detected: BELLY_EXPOSED at (438, 2302) with confidence 86.92%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1024, 1401) with confidence 82.45%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (147, 1541) with confidence 81.23%
+INFO:__main__:Detected: ARMPITS_EXPOSED at (5, 1268) with confidence 60.62%
+INFO:__main__:Analysis complete - Total: 87.13%, Parts: {'breast': 82.45043158531189}
+INFO:__main__:Part locations: {'breast': {'x': 1024, 'y': 1401, 'width': 654, 'height': 730, 'confidence': 82.45}}
+INFO:__main__:Analysis complete: rejected (nudity: 87.13%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 08:02:11] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753603338656_1753603338655_20230703_111727.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753603338656_1753603338655_20230703_111727.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.7875638008117676, 'box': [1660, 1561, 1059, 1006]}, {'class': 'MALE_GENITALIA_EXPOSED', 'score': 0.26578259468078613, 'box': [2068, 2341, 538, 643]}]
+INFO:__main__:Detected: FACE_FEMALE at (1660, 1561) with confidence 78.76%
+INFO:__main__:Detected: MALE_GENITALIA_EXPOSED at (2068, 2341) with confidence 26.58%
+INFO:__main__:Analysis complete - Total: 78.76%, Parts: {'genitalia': 26.578259468078613}
+INFO:__main__:Part locations: {'genitalia': {'x': 2068, 'y': 2341, 'width': 538, 'height': 643, 'confidence': 26.58}}
+INFO:__main__:Analysis complete: rejected (nudity: 78.76%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 08:02:21] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753603347233_1753603347233_20230703_111727.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753603347233_1753603347233_20230703_111727.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.7875638008117676, 'box': [1660, 1561, 1059, 1006]}, {'class': 'MALE_GENITALIA_EXPOSED', 'score': 0.26578259468078613, 'box': [2068, 2341, 538, 643]}]
+INFO:__main__:Detected: FACE_FEMALE at (1660, 1561) with confidence 78.76%
+INFO:__main__:Detected: MALE_GENITALIA_EXPOSED at (2068, 2341) with confidence 26.58%
+INFO:__main__:Analysis complete - Total: 78.76%, Parts: {'genitalia': 26.578259468078613}
+INFO:__main__:Part locations: {'genitalia': {'x': 2068, 'y': 2341, 'width': 538, 'height': 643, 'confidence': 26.58}}
+INFO:__main__:Analysis complete: rejected (nudity: 78.76%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 08:02:30] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753603764467_1753603764467_20230703_111727.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753603764467_1753603764467_20230703_111727.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.7875638008117676, 'box': [1660, 1561, 1059, 1006]}, {'class': 'MALE_GENITALIA_EXPOSED', 'score': 0.26578259468078613, 'box': [2068, 2341, 538, 643]}]
+INFO:__main__:Detected: FACE_FEMALE at (1660, 1561) with confidence 78.76%
+INFO:__main__:Detected: MALE_GENITALIA_EXPOSED at (2068, 2341) with confidence 26.58%
+INFO:__main__:Analysis complete - Total: 78.76%, Parts: {'genitalia': 26.578259468078613}
+INFO:__main__:Part locations: {'genitalia': {'x': 2068, 'y': 2341, 'width': 538, 'height': 643, 'confidence': 26.58}}
+INFO:__main__:Analysis complete: rejected (nudity: 78.76%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 08:09:27] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753603773450_1753603773449_20250622_003419.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753603773450_1753603773449_20250622_003419.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.8713341951370239, 'box': [633, 49, 785, 869]}, {'class': 'BELLY_EXPOSED', 'score': 0.8691685199737549, 'box': [438, 2302, 1004, 641]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8245043158531189, 'box': [1024, 1401, 654, 730]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8123218417167664, 'box': [147, 1541, 861, 855]}, {'class': 'ARMPITS_EXPOSED', 'score': 0.6061536073684692, 'box': [5, 1268, 305, 430]}]
+INFO:__main__:Detected: FACE_FEMALE at (633, 49) with confidence 87.13%
+INFO:__main__:Detected: BELLY_EXPOSED at (438, 2302) with confidence 86.92%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1024, 1401) with confidence 82.45%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (147, 1541) with confidence 81.23%
+INFO:__main__:Detected: ARMPITS_EXPOSED at (5, 1268) with confidence 60.62%
+INFO:__main__:Analysis complete - Total: 87.13%, Parts: {'breast': 82.45043158531189}
+INFO:__main__:Part locations: {'breast': {'x': 1024, 'y': 1401, 'width': 654, 'height': 730, 'confidence': 82.45}}
+INFO:__main__:Analysis complete: rejected (nudity: 87.13%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 08:09:35] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753603777817_1753603777817_20250622_003419.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753603777817_1753603777817_20250622_003419.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.8713341951370239, 'box': [633, 49, 785, 869]}, {'class': 'BELLY_EXPOSED', 'score': 0.8691685199737549, 'box': [438, 2302, 1004, 641]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8245043158531189, 'box': [1024, 1401, 654, 730]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8123218417167664, 'box': [147, 1541, 861, 855]}, {'class': 'ARMPITS_EXPOSED', 'score': 0.6061536073684692, 'box': [5, 1268, 305, 430]}]
+INFO:__main__:Detected: FACE_FEMALE at (633, 49) with confidence 87.13%
+INFO:__main__:Detected: BELLY_EXPOSED at (438, 2302) with confidence 86.92%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1024, 1401) with confidence 82.45%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (147, 1541) with confidence 81.23%
+INFO:__main__:Detected: ARMPITS_EXPOSED at (5, 1268) with confidence 60.62%
+INFO:__main__:Analysis complete - Total: 87.13%, Parts: {'breast': 82.45043158531189}
+INFO:__main__:Part locations: {'breast': {'x': 1024, 'y': 1401, 'width': 654, 'height': 730, 'confidence': 82.45}}
+INFO:__main__:Analysis complete: rejected (nudity: 87.13%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 08:09:40] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753603977480_1753603977480_20250622_003419.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753603977480_1753603977480_20250622_003419.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.8713341951370239, 'box': [633, 49, 785, 869]}, {'class': 'BELLY_EXPOSED', 'score': 0.8691685199737549, 'box': [438, 2302, 1004, 641]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8245043158531189, 'box': [1024, 1401, 654, 730]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8123218417167664, 'box': [147, 1541, 861, 855]}, {'class': 'ARMPITS_EXPOSED', 'score': 0.6061536073684692, 'box': [5, 1268, 305, 430]}]
+INFO:__main__:Detected: FACE_FEMALE at (633, 49) with confidence 87.13%
+INFO:__main__:Detected: BELLY_EXPOSED at (438, 2302) with confidence 86.92%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1024, 1401) with confidence 82.45%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (147, 1541) with confidence 81.23%
+INFO:__main__:Detected: ARMPITS_EXPOSED at (5, 1268) with confidence 60.62%
+INFO:__main__:Analysis complete - Total: 87.13%, Parts: {'breast': 82.45043158531189}
+INFO:__main__:Part locations: {'breast': {'x': 1024, 'y': 1401, 'width': 654, 'height': 730, 'confidence': 82.45}}
+INFO:__main__:Analysis complete: rejected (nudity: 87.13%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 08:13:03] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753603985102_1753603985101_20250622_003419.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753603985102_1753603985101_20250622_003419.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.8713341951370239, 'box': [633, 49, 785, 869]}, {'class': 'BELLY_EXPOSED', 'score': 0.8691685199737549, 'box': [438, 2302, 1004, 641]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8245043158531189, 'box': [1024, 1401, 654, 730]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8123218417167664, 'box': [147, 1541, 861, 855]}, {'class': 'ARMPITS_EXPOSED', 'score': 0.6061536073684692, 'box': [5, 1268, 305, 430]}]
+INFO:__main__:Detected: FACE_FEMALE at (633, 49) with confidence 87.13%
+INFO:__main__:Detected: BELLY_EXPOSED at (438, 2302) with confidence 86.92%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1024, 1401) with confidence 82.45%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (147, 1541) with confidence 81.23%
+INFO:__main__:Detected: ARMPITS_EXPOSED at (5, 1268) with confidence 60.62%
+INFO:__main__:Analysis complete - Total: 87.13%, Parts: {'breast': 82.45043158531189}
+INFO:__main__:Part locations: {'breast': {'x': 1024, 'y': 1401, 'width': 654, 'height': 730, 'confidence': 82.45}}
+INFO:__main__:Analysis complete: rejected (nudity: 87.13%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 08:13:08] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753603991472_1753603991471_20250622_003419.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753603991472_1753603991471_20250622_003419.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.8713341951370239, 'box': [633, 49, 785, 869]}, {'class': 'BELLY_EXPOSED', 'score': 0.8691685199737549, 'box': [438, 2302, 1004, 641]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8245043158531189, 'box': [1024, 1401, 654, 730]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8123218417167664, 'box': [147, 1541, 861, 855]}, {'class': 'ARMPITS_EXPOSED', 'score': 0.6061536073684692, 'box': [5, 1268, 305, 430]}]
+INFO:__main__:Detected: FACE_FEMALE at (633, 49) with confidence 87.13%
+INFO:__main__:Detected: BELLY_EXPOSED at (438, 2302) with confidence 86.92%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1024, 1401) with confidence 82.45%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (147, 1541) with confidence 81.23%
+INFO:__main__:Detected: ARMPITS_EXPOSED at (5, 1268) with confidence 60.62%
+INFO:__main__:Analysis complete - Total: 87.13%, Parts: {'breast': 82.45043158531189}
+INFO:__main__:Part locations: {'breast': {'x': 1024, 'y': 1401, 'width': 654, 'height': 730, 'confidence': 82.45}}
+INFO:__main__:Analysis complete: rejected (nudity: 87.13%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 08:13:14] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753604416951_1753604416951_20250622_003419.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753604416951_1753604416951_20250622_003419.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.8713341951370239, 'box': [633, 49, 785, 869]}, {'class': 'BELLY_EXPOSED', 'score': 0.8691685199737549, 'box': [438, 2302, 1004, 641]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8245043158531189, 'box': [1024, 1401, 654, 730]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8123218417167664, 'box': [147, 1541, 861, 855]}, {'class': 'ARMPITS_EXPOSED', 'score': 0.6061536073684692, 'box': [5, 1268, 305, 430]}]
+INFO:__main__:Detected: FACE_FEMALE at (633, 49) with confidence 87.13%
+INFO:__main__:Detected: BELLY_EXPOSED at (438, 2302) with confidence 86.92%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1024, 1401) with confidence 82.45%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (147, 1541) with confidence 81.23%
+INFO:__main__:Detected: ARMPITS_EXPOSED at (5, 1268) with confidence 60.62%
+INFO:__main__:Analysis complete - Total: 87.13%, Parts: {'breast': 82.45043158531189}
+INFO:__main__:Part locations: {'breast': {'x': 1024, 'y': 1401, 'width': 654, 'height': 730, 'confidence': 82.45}}
+INFO:__main__:Analysis complete: rejected (nudity: 87.13%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 08:20:19] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753604506548_1753604506547_20250622_003419.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753604506548_1753604506547_20250622_003419.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.8713341951370239, 'box': [633, 49, 785, 869]}, {'class': 'BELLY_EXPOSED', 'score': 0.8691685199737549, 'box': [438, 2302, 1004, 641]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8245043158531189, 'box': [1024, 1401, 654, 730]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8123218417167664, 'box': [147, 1541, 861, 855]}, {'class': 'ARMPITS_EXPOSED', 'score': 0.6061536073684692, 'box': [5, 1268, 305, 430]}]
+INFO:__main__:Detected: FACE_FEMALE at (633, 49) with confidence 87.13%
+INFO:__main__:Detected: BELLY_EXPOSED at (438, 2302) with confidence 86.92%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1024, 1401) with confidence 82.45%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (147, 1541) with confidence 81.23%
+INFO:__main__:Detected: ARMPITS_EXPOSED at (5, 1268) with confidence 60.62%
+INFO:__main__:Analysis complete - Total: 87.13%, Parts: {'breast': 82.45043158531189}
+INFO:__main__:Part locations: {'breast': {'x': 1024, 'y': 1401, 'width': 654, 'height': 730, 'confidence': 82.45}}
+INFO:__main__:Analysis complete: rejected (nudity: 87.13%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 08:21:49] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753604514654_1753604514654_20250622_003419.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753604514654_1753604514654_20250622_003419.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.8713341951370239, 'box': [633, 49, 785, 869]}, {'class': 'BELLY_EXPOSED', 'score': 0.8691685199737549, 'box': [438, 2302, 1004, 641]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8245043158531189, 'box': [1024, 1401, 654, 730]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8123218417167664, 'box': [147, 1541, 861, 855]}, {'class': 'ARMPITS_EXPOSED', 'score': 0.6061536073684692, 'box': [5, 1268, 305, 430]}]
+INFO:__main__:Detected: FACE_FEMALE at (633, 49) with confidence 87.13%
+INFO:__main__:Detected: BELLY_EXPOSED at (438, 2302) with confidence 86.92%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1024, 1401) with confidence 82.45%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (147, 1541) with confidence 81.23%
+INFO:__main__:Detected: ARMPITS_EXPOSED at (5, 1268) with confidence 60.62%
+INFO:__main__:Analysis complete - Total: 87.13%, Parts: {'breast': 82.45043158531189}
+INFO:__main__:Part locations: {'breast': {'x': 1024, 'y': 1401, 'width': 654, 'height': 730, 'confidence': 82.45}}
+INFO:__main__:Analysis complete: rejected (nudity: 87.13%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 08:22:00] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753628547763_1753628547762_20250622_003419.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753628547763_1753628547762_20250622_003419.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.8713341951370239, 'box': [633, 49, 785, 869]}, {'class': 'BELLY_EXPOSED', 'score': 0.8691685199737549, 'box': [438, 2302, 1004, 641]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8245043158531189, 'box': [1024, 1401, 654, 730]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8123218417167664, 'box': [147, 1541, 861, 855]}, {'class': 'ARMPITS_EXPOSED', 'score': 0.6061536073684692, 'box': [5, 1268, 305, 430]}]
+INFO:__main__:Detected: FACE_FEMALE at (633, 49) with confidence 87.13%
+INFO:__main__:Detected: BELLY_EXPOSED at (438, 2302) with confidence 86.92%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1024, 1401) with confidence 82.45%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (147, 1541) with confidence 81.23%
+INFO:__main__:Detected: ARMPITS_EXPOSED at (5, 1268) with confidence 60.62%
+INFO:__main__:Analysis complete - Total: 87.13%, Parts: {'breast': 82.45043158531189}
+INFO:__main__:Part locations: {'breast': {'x': 1024, 'y': 1401, 'width': 654, 'height': 730, 'confidence': 82.45}}
+INFO:__main__:Analysis complete: rejected (nudity: 87.13%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 15:02:33] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753629216686_1753629216685_20250622_003419.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753629216686_1753629216685_20250622_003419.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.8713341951370239, 'box': [633, 49, 785, 869]}, {'class': 'BELLY_EXPOSED', 'score': 0.8691685199737549, 'box': [438, 2302, 1004, 641]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8245043158531189, 'box': [1024, 1401, 654, 730]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8123218417167664, 'box': [147, 1541, 861, 855]}, {'class': 'ARMPITS_EXPOSED', 'score': 0.6061536073684692, 'box': [5, 1268, 305, 430]}]
+INFO:__main__:Detected: FACE_FEMALE at (633, 49) with confidence 87.13%
+INFO:__main__:Detected: BELLY_EXPOSED at (438, 2302) with confidence 86.92%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1024, 1401) with confidence 82.45%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (147, 1541) with confidence 81.23%
+INFO:__main__:Detected: ARMPITS_EXPOSED at (5, 1268) with confidence 60.62%
+INFO:__main__:Analysis complete - Total: 87.13%, Parts: {'breast': 82.45043158531189}
+INFO:__main__:Part locations: {'breast': {'x': 1024, 'y': 1401, 'width': 654, 'height': 730, 'confidence': 82.45}}
+INFO:__main__:Analysis complete: rejected (nudity: 87.13%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 15:13:39] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753629803503_1753629803503_20250622_003419.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753629803503_1753629803503_20250622_003419.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.8713341951370239, 'box': [633, 49, 785, 869]}, {'class': 'BELLY_EXPOSED', 'score': 0.8691685199737549, 'box': [438, 2302, 1004, 641]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8245043158531189, 'box': [1024, 1401, 654, 730]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8123218417167664, 'box': [147, 1541, 861, 855]}, {'class': 'ARMPITS_EXPOSED', 'score': 0.6061536073684692, 'box': [5, 1268, 305, 430]}]
+INFO:__main__:Detected: FACE_FEMALE at (633, 49) with confidence 87.13%
+INFO:__main__:Detected: BELLY_EXPOSED at (438, 2302) with confidence 86.92%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1024, 1401) with confidence 82.45%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (147, 1541) with confidence 81.23%
+INFO:__main__:Detected: ARMPITS_EXPOSED at (5, 1268) with confidence 60.62%
+INFO:__main__:Analysis complete - Total: 87.13%, Parts: {'breast': 82.45043158531189}
+INFO:__main__:Part locations: {'breast': {'x': 1024, 'y': 1401, 'width': 654, 'height': 730, 'confidence': 82.45}}
+INFO:__main__:Analysis complete: rejected (nudity: 87.13%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 15:23:26] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753629998212_1753629998212_20250622_003419.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753629998212_1753629998212_20250622_003419.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.8713341951370239, 'box': [633, 49, 785, 869]}, {'class': 'BELLY_EXPOSED', 'score': 0.8691685199737549, 'box': [438, 2302, 1004, 641]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8245043158531189, 'box': [1024, 1401, 654, 730]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8123218417167664, 'box': [147, 1541, 861, 855]}, {'class': 'ARMPITS_EXPOSED', 'score': 0.6061536073684692, 'box': [5, 1268, 305, 430]}]
+INFO:__main__:Detected: FACE_FEMALE at (633, 49) with confidence 87.13%
+INFO:__main__:Detected: BELLY_EXPOSED at (438, 2302) with confidence 86.92%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1024, 1401) with confidence 82.45%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (147, 1541) with confidence 81.23%
+INFO:__main__:Detected: ARMPITS_EXPOSED at (5, 1268) with confidence 60.62%
+INFO:__main__:Analysis complete - Total: 87.13%, Parts: {'breast': 82.45043158531189}
+INFO:__main__:Part locations: {'breast': {'x': 1024, 'y': 1401, 'width': 654, 'height': 730, 'confidence': 82.45}}
+INFO:__main__:Analysis complete: rejected (nudity: 87.13%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 15:26:41] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753630255533_1753630255532_20250622_003419.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753630255533_1753630255532_20250622_003419.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.8713341951370239, 'box': [633, 49, 785, 869]}, {'class': 'BELLY_EXPOSED', 'score': 0.8691685199737549, 'box': [438, 2302, 1004, 641]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8245043158531189, 'box': [1024, 1401, 654, 730]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8123218417167664, 'box': [147, 1541, 861, 855]}, {'class': 'ARMPITS_EXPOSED', 'score': 0.6061536073684692, 'box': [5, 1268, 305, 430]}]
+INFO:__main__:Detected: FACE_FEMALE at (633, 49) with confidence 87.13%
+INFO:__main__:Detected: BELLY_EXPOSED at (438, 2302) with confidence 86.92%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1024, 1401) with confidence 82.45%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (147, 1541) with confidence 81.23%
+INFO:__main__:Detected: ARMPITS_EXPOSED at (5, 1268) with confidence 60.62%
+INFO:__main__:Analysis complete - Total: 87.13%, Parts: {'breast': 82.45043158531189}
+INFO:__main__:Part locations: {'breast': {'x': 1024, 'y': 1401, 'width': 654, 'height': 730, 'confidence': 82.45}}
+INFO:__main__:Analysis complete: rejected (nudity: 87.13%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 15:30:58] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753630318405_1753630318405_20250622_003419.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753630318405_1753630318405_20250622_003419.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.8713341951370239, 'box': [633, 49, 785, 869]}, {'class': 'BELLY_EXPOSED', 'score': 0.8691685199737549, 'box': [438, 2302, 1004, 641]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8245043158531189, 'box': [1024, 1401, 654, 730]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8123218417167664, 'box': [147, 1541, 861, 855]}, {'class': 'ARMPITS_EXPOSED', 'score': 0.6061536073684692, 'box': [5, 1268, 305, 430]}]
+INFO:__main__:Detected: FACE_FEMALE at (633, 49) with confidence 87.13%
+INFO:__main__:Detected: BELLY_EXPOSED at (438, 2302) with confidence 86.92%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1024, 1401) with confidence 82.45%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (147, 1541) with confidence 81.23%
+INFO:__main__:Detected: ARMPITS_EXPOSED at (5, 1268) with confidence 60.62%
+INFO:__main__:Analysis complete - Total: 87.13%, Parts: {'breast': 82.45043158531189}
+INFO:__main__:Part locations: {'breast': {'x': 1024, 'y': 1401, 'width': 654, 'height': 730, 'confidence': 82.45}}
+INFO:__main__:Analysis complete: rejected (nudity: 87.13%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 15:32:01] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753630777012_1753630777012_20250622_003419.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753630777012_1753630777012_20250622_003419.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.8713341951370239, 'box': [633, 49, 785, 869]}, {'class': 'BELLY_EXPOSED', 'score': 0.8691685199737549, 'box': [438, 2302, 1004, 641]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8245043158531189, 'box': [1024, 1401, 654, 730]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8123218417167664, 'box': [147, 1541, 861, 855]}, {'class': 'ARMPITS_EXPOSED', 'score': 0.6061536073684692, 'box': [5, 1268, 305, 430]}]
+INFO:__main__:Detected: FACE_FEMALE at (633, 49) with confidence 87.13%
+INFO:__main__:Detected: BELLY_EXPOSED at (438, 2302) with confidence 86.92%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1024, 1401) with confidence 82.45%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (147, 1541) with confidence 81.23%
+INFO:__main__:Detected: ARMPITS_EXPOSED at (5, 1268) with confidence 60.62%
+INFO:__main__:Analysis complete - Total: 87.13%, Parts: {'breast': 82.45043158531189}
+INFO:__main__:Part locations: {'breast': {'x': 1024, 'y': 1401, 'width': 654, 'height': 730, 'confidence': 82.45}}
+INFO:__main__:Analysis complete: rejected (nudity: 87.13%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 15:39:39] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753630832149_1753630832148_20250622_003419.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753630832149_1753630832148_20250622_003419.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.8713341951370239, 'box': [633, 49, 785, 869]}, {'class': 'BELLY_EXPOSED', 'score': 0.8691685199737549, 'box': [438, 2302, 1004, 641]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8245043158531189, 'box': [1024, 1401, 654, 730]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8123218417167664, 'box': [147, 1541, 861, 855]}, {'class': 'ARMPITS_EXPOSED', 'score': 0.6061536073684692, 'box': [5, 1268, 305, 430]}]
+INFO:__main__:Detected: FACE_FEMALE at (633, 49) with confidence 87.13%
+INFO:__main__:Detected: BELLY_EXPOSED at (438, 2302) with confidence 86.92%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1024, 1401) with confidence 82.45%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (147, 1541) with confidence 81.23%
+INFO:__main__:Detected: ARMPITS_EXPOSED at (5, 1268) with confidence 60.62%
+INFO:__main__:Analysis complete - Total: 87.13%, Parts: {'breast': 82.45043158531189}
+INFO:__main__:Part locations: {'breast': {'x': 1024, 'y': 1401, 'width': 654, 'height': 730, 'confidence': 82.45}}
+INFO:__main__:Analysis complete: rejected (nudity: 87.13%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 15:40:35] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753631222268_1753631222266_20250622_003419.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753631222268_1753631222266_20250622_003419.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.8713341951370239, 'box': [633, 49, 785, 869]}, {'class': 'BELLY_EXPOSED', 'score': 0.8691685199737549, 'box': [438, 2302, 1004, 641]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8245043158531189, 'box': [1024, 1401, 654, 730]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8123218417167664, 'box': [147, 1541, 861, 855]}, {'class': 'ARMPITS_EXPOSED', 'score': 0.6061536073684692, 'box': [5, 1268, 305, 430]}]
+INFO:__main__:Detected: FACE_FEMALE at (633, 49) with confidence 87.13%
+INFO:__main__:Detected: BELLY_EXPOSED at (438, 2302) with confidence 86.92%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1024, 1401) with confidence 82.45%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (147, 1541) with confidence 81.23%
+INFO:__main__:Detected: ARMPITS_EXPOSED at (5, 1268) with confidence 60.62%
+INFO:__main__:Analysis complete - Total: 87.13%, Parts: {'breast': 82.45043158531189}
+INFO:__main__:Part locations: {'breast': {'x': 1024, 'y': 1401, 'width': 654, 'height': 730, 'confidence': 82.45}}
+INFO:__main__:Analysis complete: rejected (nudity: 87.13%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 15:47:05] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753631473044_1753631473043_20250622_003419.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753631473044_1753631473043_20250622_003419.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.8713341951370239, 'box': [633, 49, 785, 869]}, {'class': 'BELLY_EXPOSED', 'score': 0.8691685199737549, 'box': [438, 2302, 1004, 641]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8245043158531189, 'box': [1024, 1401, 654, 730]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8123218417167664, 'box': [147, 1541, 861, 855]}, {'class': 'ARMPITS_EXPOSED', 'score': 0.6061536073684692, 'box': [5, 1268, 305, 430]}]
+INFO:__main__:Detected: FACE_FEMALE at (633, 49) with confidence 87.13%
+INFO:__main__:Detected: BELLY_EXPOSED at (438, 2302) with confidence 86.92%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1024, 1401) with confidence 82.45%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (147, 1541) with confidence 81.23%
+INFO:__main__:Detected: ARMPITS_EXPOSED at (5, 1268) with confidence 60.62%
+INFO:__main__:Analysis complete - Total: 87.13%, Parts: {'breast': 82.45043158531189}
+INFO:__main__:Part locations: {'breast': {'x': 1024, 'y': 1401, 'width': 654, 'height': 730, 'confidence': 82.45}}
+INFO:__main__:Analysis complete: rejected (nudity: 87.13%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 15:51:18] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753631609683_1753631609683_20250622_003419.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753631609683_1753631609683_20250622_003419.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.8713341951370239, 'box': [633, 49, 785, 869]}, {'class': 'BELLY_EXPOSED', 'score': 0.8691685199737549, 'box': [438, 2302, 1004, 641]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8245043158531189, 'box': [1024, 1401, 654, 730]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8123218417167664, 'box': [147, 1541, 861, 855]}, {'class': 'ARMPITS_EXPOSED', 'score': 0.6061536073684692, 'box': [5, 1268, 305, 430]}]
+INFO:__main__:Detected: FACE_FEMALE at (633, 49) with confidence 87.13%
+INFO:__main__:Detected: BELLY_EXPOSED at (438, 2302) with confidence 86.92%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1024, 1401) with confidence 82.45%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (147, 1541) with confidence 81.23%
+INFO:__main__:Detected: ARMPITS_EXPOSED at (5, 1268) with confidence 60.62%
+INFO:__main__:Analysis complete - Total: 87.13%, Parts: {'breast': 82.45043158531189}
+INFO:__main__:Part locations: {'breast': {'x': 1024, 'y': 1401, 'width': 654, 'height': 730, 'confidence': 82.45}}
+INFO:__main__:Analysis complete: rejected (nudity: 87.13%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 15:53:32] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753632124467_1753632124467_20250622_003419.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753632124467_1753632124467_20250622_003419.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.8713341951370239, 'box': [633, 49, 785, 869]}, {'class': 'BELLY_EXPOSED', 'score': 0.8691685199737549, 'box': [438, 2302, 1004, 641]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8245043158531189, 'box': [1024, 1401, 654, 730]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8123218417167664, 'box': [147, 1541, 861, 855]}, {'class': 'ARMPITS_EXPOSED', 'score': 0.6061536073684692, 'box': [5, 1268, 305, 430]}]
+INFO:__main__:Detected: FACE_FEMALE at (633, 49) with confidence 87.13%
+INFO:__main__:Detected: BELLY_EXPOSED at (438, 2302) with confidence 86.92%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1024, 1401) with confidence 82.45%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (147, 1541) with confidence 81.23%
+INFO:__main__:Detected: ARMPITS_EXPOSED at (5, 1268) with confidence 60.62%
+INFO:__main__:Analysis complete - Total: 87.13%, Parts: {'breast': 82.45043158531189}
+INFO:__main__:Part locations: {'breast': {'x': 1024, 'y': 1401, 'width': 654, 'height': 730, 'confidence': 82.45}}
+INFO:__main__:Analysis complete: rejected (nudity: 87.13%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 16:02:07] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753632933920_1753632933918_20250622_003419.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753632933920_1753632933918_20250622_003419.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.8713341951370239, 'box': [633, 49, 785, 869]}, {'class': 'BELLY_EXPOSED', 'score': 0.8691685199737549, 'box': [438, 2302, 1004, 641]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8245043158531189, 'box': [1024, 1401, 654, 730]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8123218417167664, 'box': [147, 1541, 861, 855]}, {'class': 'ARMPITS_EXPOSED', 'score': 0.6061536073684692, 'box': [5, 1268, 305, 430]}]
+INFO:__main__:Detected: FACE_FEMALE at (633, 49) with confidence 87.13%
+INFO:__main__:Detected: BELLY_EXPOSED at (438, 2302) with confidence 86.92%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1024, 1401) with confidence 82.45%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (147, 1541) with confidence 81.23%
+INFO:__main__:Detected: ARMPITS_EXPOSED at (5, 1268) with confidence 60.62%
+INFO:__main__:Analysis complete - Total: 87.13%, Parts: {'breast': 82.45043158531189}
+INFO:__main__:Part locations: {'breast': {'x': 1024, 'y': 1401, 'width': 654, 'height': 730, 'confidence': 82.45}}
+INFO:__main__:Analysis complete: rejected (nudity: 87.13%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 16:15:37] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753634131563_1753634131563_20250622_003419.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753634131563_1753634131563_20250622_003419.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.8713341951370239, 'box': [633, 49, 785, 869]}, {'class': 'BELLY_EXPOSED', 'score': 0.8691685199737549, 'box': [438, 2302, 1004, 641]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8245043158531189, 'box': [1024, 1401, 654, 730]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8123218417167664, 'box': [147, 1541, 861, 855]}, {'class': 'ARMPITS_EXPOSED', 'score': 0.6061536073684692, 'box': [5, 1268, 305, 430]}]
+INFO:__main__:Detected: FACE_FEMALE at (633, 49) with confidence 87.13%
+INFO:__main__:Detected: BELLY_EXPOSED at (438, 2302) with confidence 86.92%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1024, 1401) with confidence 82.45%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (147, 1541) with confidence 81.23%
+INFO:__main__:Detected: ARMPITS_EXPOSED at (5, 1268) with confidence 60.62%
+INFO:__main__:Analysis complete - Total: 87.13%, Parts: {'breast': 82.45043158531189}
+INFO:__main__:Part locations: {'breast': {'x': 1024, 'y': 1401, 'width': 654, 'height': 730, 'confidence': 82.45}}
+INFO:__main__:Analysis complete: rejected (nudity: 87.13%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 16:35:34] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753634596928_1753634596928_20250622_003419.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753634596928_1753634596928_20250622_003419.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.8713341951370239, 'box': [633, 49, 785, 869]}, {'class': 'BELLY_EXPOSED', 'score': 0.8691685199737549, 'box': [438, 2302, 1004, 641]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8245043158531189, 'box': [1024, 1401, 654, 730]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8123218417167664, 'box': [147, 1541, 861, 855]}, {'class': 'ARMPITS_EXPOSED', 'score': 0.6061536073684692, 'box': [5, 1268, 305, 430]}]
+INFO:__main__:Detected: FACE_FEMALE at (633, 49) with confidence 87.13%
+INFO:__main__:Detected: BELLY_EXPOSED at (438, 2302) with confidence 86.92%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1024, 1401) with confidence 82.45%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (147, 1541) with confidence 81.23%
+INFO:__main__:Detected: ARMPITS_EXPOSED at (5, 1268) with confidence 60.62%
+INFO:__main__:Analysis complete - Total: 87.13%, Parts: {'breast': 82.45043158531189}
+INFO:__main__:Part locations: {'breast': {'x': 1024, 'y': 1401, 'width': 654, 'height': 730, 'confidence': 82.45}}
+INFO:__main__:Analysis complete: rejected (nudity: 87.13%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 16:43:19] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753634601060_1753634601060_20250622_003419.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753634601060_1753634601060_20250622_003419.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.8713341951370239, 'box': [633, 49, 785, 869]}, {'class': 'BELLY_EXPOSED', 'score': 0.8691685199737549, 'box': [438, 2302, 1004, 641]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8245043158531189, 'box': [1024, 1401, 654, 730]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8123218417167664, 'box': [147, 1541, 861, 855]}, {'class': 'ARMPITS_EXPOSED', 'score': 0.6061536073684692, 'box': [5, 1268, 305, 430]}]
+INFO:__main__:Detected: FACE_FEMALE at (633, 49) with confidence 87.13%
+INFO:__main__:Detected: BELLY_EXPOSED at (438, 2302) with confidence 86.92%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1024, 1401) with confidence 82.45%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (147, 1541) with confidence 81.23%
+INFO:__main__:Detected: ARMPITS_EXPOSED at (5, 1268) with confidence 60.62%
+INFO:__main__:Analysis complete - Total: 87.13%, Parts: {'breast': 82.45043158531189}
+INFO:__main__:Part locations: {'breast': {'x': 1024, 'y': 1401, 'width': 654, 'height': 730, 'confidence': 82.45}}
+INFO:__main__:Analysis complete: rejected (nudity: 87.13%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 16:43:23] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753634605470_1753634605469_20250622_003419.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753634605470_1753634605469_20250622_003419.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.8713341951370239, 'box': [633, 49, 785, 869]}, {'class': 'BELLY_EXPOSED', 'score': 0.8691685199737549, 'box': [438, 2302, 1004, 641]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8245043158531189, 'box': [1024, 1401, 654, 730]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8123218417167664, 'box': [147, 1541, 861, 855]}, {'class': 'ARMPITS_EXPOSED', 'score': 0.6061536073684692, 'box': [5, 1268, 305, 430]}]
+INFO:__main__:Detected: FACE_FEMALE at (633, 49) with confidence 87.13%
+INFO:__main__:Detected: BELLY_EXPOSED at (438, 2302) with confidence 86.92%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1024, 1401) with confidence 82.45%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (147, 1541) with confidence 81.23%
+INFO:__main__:Detected: ARMPITS_EXPOSED at (5, 1268) with confidence 60.62%
+INFO:__main__:Analysis complete - Total: 87.13%, Parts: {'breast': 82.45043158531189}
+INFO:__main__:Part locations: {'breast': {'x': 1024, 'y': 1401, 'width': 654, 'height': 730, 'confidence': 82.45}}
+INFO:__main__:Analysis complete: rejected (nudity: 87.13%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 16:43:28] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753634613431_1753634613431_20250622_003419.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753634613431_1753634613431_20250622_003419.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.8713341951370239, 'box': [633, 49, 785, 869]}, {'class': 'BELLY_EXPOSED', 'score': 0.8691685199737549, 'box': [438, 2302, 1004, 641]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8245043158531189, 'box': [1024, 1401, 654, 730]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8123218417167664, 'box': [147, 1541, 861, 855]}, {'class': 'ARMPITS_EXPOSED', 'score': 0.6061536073684692, 'box': [5, 1268, 305, 430]}]
+INFO:__main__:Detected: FACE_FEMALE at (633, 49) with confidence 87.13%
+INFO:__main__:Detected: BELLY_EXPOSED at (438, 2302) with confidence 86.92%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1024, 1401) with confidence 82.45%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (147, 1541) with confidence 81.23%
+INFO:__main__:Detected: ARMPITS_EXPOSED at (5, 1268) with confidence 60.62%
+INFO:__main__:Analysis complete - Total: 87.13%, Parts: {'breast': 82.45043158531189}
+INFO:__main__:Part locations: {'breast': {'x': 1024, 'y': 1401, 'width': 654, 'height': 730, 'confidence': 82.45}}
+INFO:__main__:Analysis complete: rejected (nudity: 87.13%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 16:43:37] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753636344175_1753636344173_20250622_003419.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753636344175_1753636344173_20250622_003419.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.8713341951370239, 'box': [633, 49, 785, 869]}, {'class': 'BELLY_EXPOSED', 'score': 0.8691685199737549, 'box': [438, 2302, 1004, 641]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8245043158531189, 'box': [1024, 1401, 654, 730]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8123218417167664, 'box': [147, 1541, 861, 855]}, {'class': 'ARMPITS_EXPOSED', 'score': 0.6061536073684692, 'box': [5, 1268, 305, 430]}]
+INFO:__main__:Detected: FACE_FEMALE at (633, 49) with confidence 87.13%
+INFO:__main__:Detected: BELLY_EXPOSED at (438, 2302) with confidence 86.92%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1024, 1401) with confidence 82.45%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (147, 1541) with confidence 81.23%
+INFO:__main__:Detected: ARMPITS_EXPOSED at (5, 1268) with confidence 60.62%
+INFO:__main__:Analysis complete - Total: 87.13%, Parts: {'breast': 82.45043158531189}
+INFO:__main__:Part locations: {'breast': {'x': 1024, 'y': 1401, 'width': 654, 'height': 730, 'confidence': 82.45}}
+INFO:__main__:Analysis complete: rejected (nudity: 87.13%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 17:12:27] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753636348659_1753636348659_20250622_003419.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753636348659_1753636348659_20250622_003419.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.8713341951370239, 'box': [633, 49, 785, 869]}, {'class': 'BELLY_EXPOSED', 'score': 0.8691685199737549, 'box': [438, 2302, 1004, 641]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8245043158531189, 'box': [1024, 1401, 654, 730]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8123218417167664, 'box': [147, 1541, 861, 855]}, {'class': 'ARMPITS_EXPOSED', 'score': 0.6061536073684692, 'box': [5, 1268, 305, 430]}]
+INFO:__main__:Detected: FACE_FEMALE at (633, 49) with confidence 87.13%
+INFO:__main__:Detected: BELLY_EXPOSED at (438, 2302) with confidence 86.92%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1024, 1401) with confidence 82.45%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (147, 1541) with confidence 81.23%
+INFO:__main__:Detected: ARMPITS_EXPOSED at (5, 1268) with confidence 60.62%
+INFO:__main__:Analysis complete - Total: 87.13%, Parts: {'breast': 82.45043158531189}
+INFO:__main__:Part locations: {'breast': {'x': 1024, 'y': 1401, 'width': 654, 'height': 730, 'confidence': 82.45}}
+INFO:__main__:Analysis complete: rejected (nudity: 87.13%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 17:12:31] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753636354153_1753636354153_20250622_003419.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753636354153_1753636354153_20250622_003419.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.8713341951370239, 'box': [633, 49, 785, 869]}, {'class': 'BELLY_EXPOSED', 'score': 0.8691685199737549, 'box': [438, 2302, 1004, 641]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8245043158531189, 'box': [1024, 1401, 654, 730]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8123218417167664, 'box': [147, 1541, 861, 855]}, {'class': 'ARMPITS_EXPOSED', 'score': 0.6061536073684692, 'box': [5, 1268, 305, 430]}]
+INFO:__main__:Detected: FACE_FEMALE at (633, 49) with confidence 87.13%
+INFO:__main__:Detected: BELLY_EXPOSED at (438, 2302) with confidence 86.92%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1024, 1401) with confidence 82.45%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (147, 1541) with confidence 81.23%
+INFO:__main__:Detected: ARMPITS_EXPOSED at (5, 1268) with confidence 60.62%
+INFO:__main__:Analysis complete - Total: 87.13%, Parts: {'breast': 82.45043158531189}
+INFO:__main__:Part locations: {'breast': {'x': 1024, 'y': 1401, 'width': 654, 'height': 730, 'confidence': 82.45}}
+INFO:__main__:Analysis complete: rejected (nudity: 87.13%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 17:12:36] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753636358512_1753636358512_20250622_003419.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753636358512_1753636358512_20250622_003419.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.8713341951370239, 'box': [633, 49, 785, 869]}, {'class': 'BELLY_EXPOSED', 'score': 0.8691685199737549, 'box': [438, 2302, 1004, 641]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8245043158531189, 'box': [1024, 1401, 654, 730]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8123218417167664, 'box': [147, 1541, 861, 855]}, {'class': 'ARMPITS_EXPOSED', 'score': 0.6061536073684692, 'box': [5, 1268, 305, 430]}]
+INFO:__main__:Detected: FACE_FEMALE at (633, 49) with confidence 87.13%
+INFO:__main__:Detected: BELLY_EXPOSED at (438, 2302) with confidence 86.92%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1024, 1401) with confidence 82.45%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (147, 1541) with confidence 81.23%
+INFO:__main__:Detected: ARMPITS_EXPOSED at (5, 1268) with confidence 60.62%
+INFO:__main__:Analysis complete - Total: 87.13%, Parts: {'breast': 82.45043158531189}
+INFO:__main__:Part locations: {'breast': {'x': 1024, 'y': 1401, 'width': 654, 'height': 730, 'confidence': 82.45}}
+INFO:__main__:Analysis complete: rejected (nudity: 87.13%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 17:12:41] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753636362825_1753636362825_20250622_003419.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753636362825_1753636362825_20250622_003419.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.8713341951370239, 'box': [633, 49, 785, 869]}, {'class': 'BELLY_EXPOSED', 'score': 0.8691685199737549, 'box': [438, 2302, 1004, 641]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8245043158531189, 'box': [1024, 1401, 654, 730]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8123218417167664, 'box': [147, 1541, 861, 855]}, {'class': 'ARMPITS_EXPOSED', 'score': 0.6061536073684692, 'box': [5, 1268, 305, 430]}]
+INFO:__main__:Detected: FACE_FEMALE at (633, 49) with confidence 87.13%
+INFO:__main__:Detected: BELLY_EXPOSED at (438, 2302) with confidence 86.92%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1024, 1401) with confidence 82.45%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (147, 1541) with confidence 81.23%
+INFO:__main__:Detected: ARMPITS_EXPOSED at (5, 1268) with confidence 60.62%
+INFO:__main__:Analysis complete - Total: 87.13%, Parts: {'breast': 82.45043158531189}
+INFO:__main__:Part locations: {'breast': {'x': 1024, 'y': 1401, 'width': 654, 'height': 730, 'confidence': 82.45}}
+INFO:__main__:Analysis complete: rejected (nudity: 87.13%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 17:12:45] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753636367045_1753636367044_20250622_003419.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753636367045_1753636367044_20250622_003419.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.8713341951370239, 'box': [633, 49, 785, 869]}, {'class': 'BELLY_EXPOSED', 'score': 0.8691685199737549, 'box': [438, 2302, 1004, 641]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8245043158531189, 'box': [1024, 1401, 654, 730]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8123218417167664, 'box': [147, 1541, 861, 855]}, {'class': 'ARMPITS_EXPOSED', 'score': 0.6061536073684692, 'box': [5, 1268, 305, 430]}]
+INFO:__main__:Detected: FACE_FEMALE at (633, 49) with confidence 87.13%
+INFO:__main__:Detected: BELLY_EXPOSED at (438, 2302) with confidence 86.92%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1024, 1401) with confidence 82.45%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (147, 1541) with confidence 81.23%
+INFO:__main__:Detected: ARMPITS_EXPOSED at (5, 1268) with confidence 60.62%
+INFO:__main__:Analysis complete - Total: 87.13%, Parts: {'breast': 82.45043158531189}
+INFO:__main__:Part locations: {'breast': {'x': 1024, 'y': 1401, 'width': 654, 'height': 730, 'confidence': 82.45}}
+INFO:__main__:Analysis complete: rejected (nudity: 87.13%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 17:12:49] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753638014704_1753638014703_20250622_003419.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753638014704_1753638014703_20250622_003419.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.8713341951370239, 'box': [633, 49, 785, 869]}, {'class': 'BELLY_EXPOSED', 'score': 0.8691685199737549, 'box': [438, 2302, 1004, 641]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8245043158531189, 'box': [1024, 1401, 654, 730]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8123218417167664, 'box': [147, 1541, 861, 855]}, {'class': 'ARMPITS_EXPOSED', 'score': 0.6061536073684692, 'box': [5, 1268, 305, 430]}]
+INFO:__main__:Detected: FACE_FEMALE at (633, 49) with confidence 87.13%
+INFO:__main__:Detected: BELLY_EXPOSED at (438, 2302) with confidence 86.92%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1024, 1401) with confidence 82.45%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (147, 1541) with confidence 81.23%
+INFO:__main__:Detected: ARMPITS_EXPOSED at (5, 1268) with confidence 60.62%
+INFO:__main__:Analysis complete - Total: 87.13%, Parts: {'breast': 82.45043158531189}
+INFO:__main__:Part locations: {'breast': {'x': 1024, 'y': 1401, 'width': 654, 'height': 730, 'confidence': 82.45}}
+INFO:__main__:Analysis complete: rejected (nudity: 87.13%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 17:40:17] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753638018773_1753638018772_20250622_003419.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753638018773_1753638018772_20250622_003419.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.8713341951370239, 'box': [633, 49, 785, 869]}, {'class': 'BELLY_EXPOSED', 'score': 0.8691685199737549, 'box': [438, 2302, 1004, 641]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8245043158531189, 'box': [1024, 1401, 654, 730]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8123218417167664, 'box': [147, 1541, 861, 855]}, {'class': 'ARMPITS_EXPOSED', 'score': 0.6061536073684692, 'box': [5, 1268, 305, 430]}]
+INFO:__main__:Detected: FACE_FEMALE at (633, 49) with confidence 87.13%
+INFO:__main__:Detected: BELLY_EXPOSED at (438, 2302) with confidence 86.92%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1024, 1401) with confidence 82.45%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (147, 1541) with confidence 81.23%
+INFO:__main__:Detected: ARMPITS_EXPOSED at (5, 1268) with confidence 60.62%
+INFO:__main__:Analysis complete - Total: 87.13%, Parts: {'breast': 82.45043158531189}
+INFO:__main__:Part locations: {'breast': {'x': 1024, 'y': 1401, 'width': 654, 'height': 730, 'confidence': 82.45}}
+INFO:__main__:Analysis complete: rejected (nudity: 87.13%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 17:40:21] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753638272872_1753638272871_20250622_003419.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753638272872_1753638272871_20250622_003419.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.8713341951370239, 'box': [633, 49, 785, 869]}, {'class': 'BELLY_EXPOSED', 'score': 0.8691685199737549, 'box': [438, 2302, 1004, 641]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8245043158531189, 'box': [1024, 1401, 654, 730]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8123218417167664, 'box': [147, 1541, 861, 855]}, {'class': 'ARMPITS_EXPOSED', 'score': 0.6061536073684692, 'box': [5, 1268, 305, 430]}]
+INFO:__main__:Detected: FACE_FEMALE at (633, 49) with confidence 87.13%
+INFO:__main__:Detected: BELLY_EXPOSED at (438, 2302) with confidence 86.92%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1024, 1401) with confidence 82.45%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (147, 1541) with confidence 81.23%
+INFO:__main__:Detected: ARMPITS_EXPOSED at (5, 1268) with confidence 60.62%
+INFO:__main__:Analysis complete - Total: 87.13%, Parts: {'breast': 82.45043158531189}
+INFO:__main__:Part locations: {'breast': {'x': 1024, 'y': 1401, 'width': 654, 'height': 730, 'confidence': 82.45}}
+INFO:__main__:Analysis complete: rejected (nudity: 87.13%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 17:44:35] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753638278250_1753638278250_20250622_003419.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753638278250_1753638278250_20250622_003419.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.8713341951370239, 'box': [633, 49, 785, 869]}, {'class': 'BELLY_EXPOSED', 'score': 0.8691685199737549, 'box': [438, 2302, 1004, 641]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8245043158531189, 'box': [1024, 1401, 654, 730]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8123218417167664, 'box': [147, 1541, 861, 855]}, {'class': 'ARMPITS_EXPOSED', 'score': 0.6061536073684692, 'box': [5, 1268, 305, 430]}]
+INFO:__main__:Detected: FACE_FEMALE at (633, 49) with confidence 87.13%
+INFO:__main__:Detected: BELLY_EXPOSED at (438, 2302) with confidence 86.92%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1024, 1401) with confidence 82.45%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (147, 1541) with confidence 81.23%
+INFO:__main__:Detected: ARMPITS_EXPOSED at (5, 1268) with confidence 60.62%
+INFO:__main__:Analysis complete - Total: 87.13%, Parts: {'breast': 82.45043158531189}
+INFO:__main__:Part locations: {'breast': {'x': 1024, 'y': 1401, 'width': 654, 'height': 730, 'confidence': 82.45}}
+INFO:__main__:Analysis complete: rejected (nudity: 87.13%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 17:44:40] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753638283272_1753638283272_20250622_003419.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753638283272_1753638283272_20250622_003419.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.8713341951370239, 'box': [633, 49, 785, 869]}, {'class': 'BELLY_EXPOSED', 'score': 0.8691685199737549, 'box': [438, 2302, 1004, 641]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8245043158531189, 'box': [1024, 1401, 654, 730]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8123218417167664, 'box': [147, 1541, 861, 855]}, {'class': 'ARMPITS_EXPOSED', 'score': 0.6061536073684692, 'box': [5, 1268, 305, 430]}]
+INFO:__main__:Detected: FACE_FEMALE at (633, 49) with confidence 87.13%
+INFO:__main__:Detected: BELLY_EXPOSED at (438, 2302) with confidence 86.92%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1024, 1401) with confidence 82.45%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (147, 1541) with confidence 81.23%
+INFO:__main__:Detected: ARMPITS_EXPOSED at (5, 1268) with confidence 60.62%
+INFO:__main__:Analysis complete - Total: 87.13%, Parts: {'breast': 82.45043158531189}
+INFO:__main__:Part locations: {'breast': {'x': 1024, 'y': 1401, 'width': 654, 'height': 730, 'confidence': 82.45}}
+INFO:__main__:Analysis complete: rejected (nudity: 87.13%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 17:44:45] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753639206539_1753639206538_20250622_003419.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753639206539_1753639206538_20250622_003419.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.8713341951370239, 'box': [633, 49, 785, 869]}, {'class': 'BELLY_EXPOSED', 'score': 0.8691685199737549, 'box': [438, 2302, 1004, 641]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8245043158531189, 'box': [1024, 1401, 654, 730]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8123218417167664, 'box': [147, 1541, 861, 855]}, {'class': 'ARMPITS_EXPOSED', 'score': 0.6061536073684692, 'box': [5, 1268, 305, 430]}]
+INFO:__main__:Detected: FACE_FEMALE at (633, 49) with confidence 87.13%
+INFO:__main__:Detected: BELLY_EXPOSED at (438, 2302) with confidence 86.92%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1024, 1401) with confidence 82.45%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (147, 1541) with confidence 81.23%
+INFO:__main__:Detected: ARMPITS_EXPOSED at (5, 1268) with confidence 60.62%
+INFO:__main__:Analysis complete - Total: 87.13%, Parts: {'breast': 82.45043158531189}
+INFO:__main__:Part locations: {'breast': {'x': 1024, 'y': 1401, 'width': 654, 'height': 730, 'confidence': 82.45}}
+INFO:__main__:Analysis complete: rejected (nudity: 87.13%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 18:00:09] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753639213919_1753639213919_20250622_003419.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753639213919_1753639213919_20250622_003419.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.8713341951370239, 'box': [633, 49, 785, 869]}, {'class': 'BELLY_EXPOSED', 'score': 0.8691685199737549, 'box': [438, 2302, 1004, 641]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8245043158531189, 'box': [1024, 1401, 654, 730]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8123218417167664, 'box': [147, 1541, 861, 855]}, {'class': 'ARMPITS_EXPOSED', 'score': 0.6061536073684692, 'box': [5, 1268, 305, 430]}]
+INFO:__main__:Detected: FACE_FEMALE at (633, 49) with confidence 87.13%
+INFO:__main__:Detected: BELLY_EXPOSED at (438, 2302) with confidence 86.92%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1024, 1401) with confidence 82.45%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (147, 1541) with confidence 81.23%
+INFO:__main__:Detected: ARMPITS_EXPOSED at (5, 1268) with confidence 60.62%
+INFO:__main__:Analysis complete - Total: 87.13%, Parts: {'breast': 82.45043158531189}
+INFO:__main__:Part locations: {'breast': {'x': 1024, 'y': 1401, 'width': 654, 'height': 730, 'confidence': 82.45}}
+INFO:__main__:Analysis complete: rejected (nudity: 87.13%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 18:00:16] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753640401112_1753640401112_20250622_003419.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753640401112_1753640401112_20250622_003419.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.8713341951370239, 'box': [633, 49, 785, 869]}, {'class': 'BELLY_EXPOSED', 'score': 0.8691685199737549, 'box': [438, 2302, 1004, 641]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8245043158531189, 'box': [1024, 1401, 654, 730]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8123218417167664, 'box': [147, 1541, 861, 855]}, {'class': 'ARMPITS_EXPOSED', 'score': 0.6061536073684692, 'box': [5, 1268, 305, 430]}]
+INFO:__main__:Detected: FACE_FEMALE at (633, 49) with confidence 87.13%
+INFO:__main__:Detected: BELLY_EXPOSED at (438, 2302) with confidence 86.92%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1024, 1401) with confidence 82.45%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (147, 1541) with confidence 81.23%
+INFO:__main__:Detected: ARMPITS_EXPOSED at (5, 1268) with confidence 60.62%
+INFO:__main__:Analysis complete - Total: 87.13%, Parts: {'breast': 82.45043158531189}
+INFO:__main__:Part locations: {'breast': {'x': 1024, 'y': 1401, 'width': 654, 'height': 730, 'confidence': 82.45}}
+INFO:__main__:Analysis complete: rejected (nudity: 87.13%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 18:20:04] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753640666395_20250622_003419.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753640666395_20250622_003419.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.8713341951370239, 'box': [633, 49, 785, 869]}, {'class': 'BELLY_EXPOSED', 'score': 0.8691685199737549, 'box': [438, 2302, 1004, 641]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8245043158531189, 'box': [1024, 1401, 654, 730]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8123218417167664, 'box': [147, 1541, 861, 855]}, {'class': 'ARMPITS_EXPOSED', 'score': 0.6061536073684692, 'box': [5, 1268, 305, 430]}]
+INFO:__main__:Detected: FACE_FEMALE at (633, 49) with confidence 87.13%
+INFO:__main__:Detected: BELLY_EXPOSED at (438, 2302) with confidence 86.92%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1024, 1401) with confidence 82.45%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (147, 1541) with confidence 81.23%
+INFO:__main__:Detected: ARMPITS_EXPOSED at (5, 1268) with confidence 60.62%
+INFO:__main__:Analysis complete - Total: 87.13%, Parts: {'breast': 82.45043158531189}
+INFO:__main__:Part locations: {'breast': {'x': 1024, 'y': 1401, 'width': 654, 'height': 730, 'confidence': 82.45}}
+INFO:__main__:Analysis complete: rejected (nudity: 87.13%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 18:24:29] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753640710882_1753640710881_20250622_003419.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753640710882_1753640710881_20250622_003419.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.8713341951370239, 'box': [633, 49, 785, 869]}, {'class': 'BELLY_EXPOSED', 'score': 0.8691685199737549, 'box': [438, 2302, 1004, 641]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8245043158531189, 'box': [1024, 1401, 654, 730]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8123218417167664, 'box': [147, 1541, 861, 855]}, {'class': 'ARMPITS_EXPOSED', 'score': 0.6061536073684692, 'box': [5, 1268, 305, 430]}]
+INFO:__main__:Detected: FACE_FEMALE at (633, 49) with confidence 87.13%
+INFO:__main__:Detected: BELLY_EXPOSED at (438, 2302) with confidence 86.92%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1024, 1401) with confidence 82.45%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (147, 1541) with confidence 81.23%
+INFO:__main__:Detected: ARMPITS_EXPOSED at (5, 1268) with confidence 60.62%
+INFO:__main__:Analysis complete - Total: 87.13%, Parts: {'breast': 82.45043158531189}
+INFO:__main__:Part locations: {'breast': {'x': 1024, 'y': 1401, 'width': 654, 'height': 730, 'confidence': 82.45}}
+INFO:__main__:Analysis complete: rejected (nudity: 87.13%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 18:25:13] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753640768125_1753640768124_20250622_003419.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753640768125_1753640768124_20250622_003419.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.8713341951370239, 'box': [633, 49, 785, 869]}, {'class': 'BELLY_EXPOSED', 'score': 0.8691685199737549, 'box': [438, 2302, 1004, 641]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8245043158531189, 'box': [1024, 1401, 654, 730]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8123218417167664, 'box': [147, 1541, 861, 855]}, {'class': 'ARMPITS_EXPOSED', 'score': 0.6061536073684692, 'box': [5, 1268, 305, 430]}]
+INFO:__main__:Detected: FACE_FEMALE at (633, 49) with confidence 87.13%
+INFO:__main__:Detected: BELLY_EXPOSED at (438, 2302) with confidence 86.92%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1024, 1401) with confidence 82.45%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (147, 1541) with confidence 81.23%
+INFO:__main__:Detected: ARMPITS_EXPOSED at (5, 1268) with confidence 60.62%
+INFO:__main__:Analysis complete - Total: 87.13%, Parts: {'breast': 82.45043158531189}
+INFO:__main__:Part locations: {'breast': {'x': 1024, 'y': 1401, 'width': 654, 'height': 730, 'confidence': 82.45}}
+INFO:__main__:Analysis complete: rejected (nudity: 87.13%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 18:26:10] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753641131497_1753641131496_20250622_003419.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753641131497_1753641131496_20250622_003419.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.8713341951370239, 'box': [633, 49, 785, 869]}, {'class': 'BELLY_EXPOSED', 'score': 0.8691685199737549, 'box': [438, 2302, 1004, 641]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8245043158531189, 'box': [1024, 1401, 654, 730]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8123218417167664, 'box': [147, 1541, 861, 855]}, {'class': 'ARMPITS_EXPOSED', 'score': 0.6061536073684692, 'box': [5, 1268, 305, 430]}]
+INFO:__main__:Detected: FACE_FEMALE at (633, 49) with confidence 87.13%
+INFO:__main__:Detected: BELLY_EXPOSED at (438, 2302) with confidence 86.92%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1024, 1401) with confidence 82.45%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (147, 1541) with confidence 81.23%
+INFO:__main__:Detected: ARMPITS_EXPOSED at (5, 1268) with confidence 60.62%
+INFO:__main__:Analysis complete - Total: 87.13%, Parts: {'breast': 82.45043158531189}
+INFO:__main__:Part locations: {'breast': {'x': 1024, 'y': 1401, 'width': 654, 'height': 730, 'confidence': 82.45}}
+INFO:__main__:Analysis complete: rejected (nudity: 87.13%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 18:32:14] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753641135438_1753641135438_20250622_003419.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753641135438_1753641135438_20250622_003419.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.8713341951370239, 'box': [633, 49, 785, 869]}, {'class': 'BELLY_EXPOSED', 'score': 0.8691685199737549, 'box': [438, 2302, 1004, 641]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8245043158531189, 'box': [1024, 1401, 654, 730]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8123218417167664, 'box': [147, 1541, 861, 855]}, {'class': 'ARMPITS_EXPOSED', 'score': 0.6061536073684692, 'box': [5, 1268, 305, 430]}]
+INFO:__main__:Detected: FACE_FEMALE at (633, 49) with confidence 87.13%
+INFO:__main__:Detected: BELLY_EXPOSED at (438, 2302) with confidence 86.92%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1024, 1401) with confidence 82.45%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (147, 1541) with confidence 81.23%
+INFO:__main__:Detected: ARMPITS_EXPOSED at (5, 1268) with confidence 60.62%
+INFO:__main__:Analysis complete - Total: 87.13%, Parts: {'breast': 82.45043158531189}
+INFO:__main__:Part locations: {'breast': {'x': 1024, 'y': 1401, 'width': 654, 'height': 730, 'confidence': 82.45}}
+INFO:__main__:Analysis complete: rejected (nudity: 87.13%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 18:32:17] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753641138472_1753641138472_20250622_003419.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753641138472_1753641138472_20250622_003419.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.8713341951370239, 'box': [633, 49, 785, 869]}, {'class': 'BELLY_EXPOSED', 'score': 0.8691685199737549, 'box': [438, 2302, 1004, 641]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8245043158531189, 'box': [1024, 1401, 654, 730]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8123218417167664, 'box': [147, 1541, 861, 855]}, {'class': 'ARMPITS_EXPOSED', 'score': 0.6061536073684692, 'box': [5, 1268, 305, 430]}]
+INFO:__main__:Detected: FACE_FEMALE at (633, 49) with confidence 87.13%
+INFO:__main__:Detected: BELLY_EXPOSED at (438, 2302) with confidence 86.92%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1024, 1401) with confidence 82.45%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (147, 1541) with confidence 81.23%
+INFO:__main__:Detected: ARMPITS_EXPOSED at (5, 1268) with confidence 60.62%
+INFO:__main__:Analysis complete - Total: 87.13%, Parts: {'breast': 82.45043158531189}
+INFO:__main__:Part locations: {'breast': {'x': 1024, 'y': 1401, 'width': 654, 'height': 730, 'confidence': 82.45}}
+INFO:__main__:Analysis complete: rejected (nudity: 87.13%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 18:32:21] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753641141549_1753641141549_20250622_003419.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753641141549_1753641141549_20250622_003419.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.8713341951370239, 'box': [633, 49, 785, 869]}, {'class': 'BELLY_EXPOSED', 'score': 0.8691685199737549, 'box': [438, 2302, 1004, 641]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8245043158531189, 'box': [1024, 1401, 654, 730]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8123218417167664, 'box': [147, 1541, 861, 855]}, {'class': 'ARMPITS_EXPOSED', 'score': 0.6061536073684692, 'box': [5, 1268, 305, 430]}]
+INFO:__main__:Detected: FACE_FEMALE at (633, 49) with confidence 87.13%
+INFO:__main__:Detected: BELLY_EXPOSED at (438, 2302) with confidence 86.92%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1024, 1401) with confidence 82.45%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (147, 1541) with confidence 81.23%
+INFO:__main__:Detected: ARMPITS_EXPOSED at (5, 1268) with confidence 60.62%
+INFO:__main__:Analysis complete - Total: 87.13%, Parts: {'breast': 82.45043158531189}
+INFO:__main__:Part locations: {'breast': {'x': 1024, 'y': 1401, 'width': 654, 'height': 730, 'confidence': 82.45}}
+INFO:__main__:Analysis complete: rejected (nudity: 87.13%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 18:32:25] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753641145631_1753641145631_20250622_003419.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753641145631_1753641145631_20250622_003419.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.8713341951370239, 'box': [633, 49, 785, 869]}, {'class': 'BELLY_EXPOSED', 'score': 0.8691685199737549, 'box': [438, 2302, 1004, 641]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8245043158531189, 'box': [1024, 1401, 654, 730]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8123218417167664, 'box': [147, 1541, 861, 855]}, {'class': 'ARMPITS_EXPOSED', 'score': 0.6061536073684692, 'box': [5, 1268, 305, 430]}]
+INFO:__main__:Detected: FACE_FEMALE at (633, 49) with confidence 87.13%
+INFO:__main__:Detected: BELLY_EXPOSED at (438, 2302) with confidence 86.92%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1024, 1401) with confidence 82.45%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (147, 1541) with confidence 81.23%
+INFO:__main__:Detected: ARMPITS_EXPOSED at (5, 1268) with confidence 60.62%
+INFO:__main__:Analysis complete - Total: 87.13%, Parts: {'breast': 82.45043158531189}
+INFO:__main__:Part locations: {'breast': {'x': 1024, 'y': 1401, 'width': 654, 'height': 730, 'confidence': 82.45}}
+INFO:__main__:Analysis complete: rejected (nudity: 87.13%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 18:32:28] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753641149115_1753641149115_20250622_003419.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753641149115_1753641149115_20250622_003419.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.8713341951370239, 'box': [633, 49, 785, 869]}, {'class': 'BELLY_EXPOSED', 'score': 0.8691685199737549, 'box': [438, 2302, 1004, 641]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8245043158531189, 'box': [1024, 1401, 654, 730]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8123218417167664, 'box': [147, 1541, 861, 855]}, {'class': 'ARMPITS_EXPOSED', 'score': 0.6061536073684692, 'box': [5, 1268, 305, 430]}]
+INFO:__main__:Detected: FACE_FEMALE at (633, 49) with confidence 87.13%
+INFO:__main__:Detected: BELLY_EXPOSED at (438, 2302) with confidence 86.92%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1024, 1401) with confidence 82.45%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (147, 1541) with confidence 81.23%
+INFO:__main__:Detected: ARMPITS_EXPOSED at (5, 1268) with confidence 60.62%
+INFO:__main__:Analysis complete - Total: 87.13%, Parts: {'breast': 82.45043158531189}
+INFO:__main__:Part locations: {'breast': {'x': 1024, 'y': 1401, 'width': 654, 'height': 730, 'confidence': 82.45}}
+INFO:__main__:Analysis complete: rejected (nudity: 87.13%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 18:32:31] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753641152498_1753641152498_20250622_003419.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753641152498_1753641152498_20250622_003419.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.8713341951370239, 'box': [633, 49, 785, 869]}, {'class': 'BELLY_EXPOSED', 'score': 0.8691685199737549, 'box': [438, 2302, 1004, 641]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8245043158531189, 'box': [1024, 1401, 654, 730]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8123218417167664, 'box': [147, 1541, 861, 855]}, {'class': 'ARMPITS_EXPOSED', 'score': 0.6061536073684692, 'box': [5, 1268, 305, 430]}]
+INFO:__main__:Detected: FACE_FEMALE at (633, 49) with confidence 87.13%
+INFO:__main__:Detected: BELLY_EXPOSED at (438, 2302) with confidence 86.92%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1024, 1401) with confidence 82.45%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (147, 1541) with confidence 81.23%
+INFO:__main__:Detected: ARMPITS_EXPOSED at (5, 1268) with confidence 60.62%
+INFO:__main__:Analysis complete - Total: 87.13%, Parts: {'breast': 82.45043158531189}
+INFO:__main__:Part locations: {'breast': {'x': 1024, 'y': 1401, 'width': 654, 'height': 730, 'confidence': 82.45}}
+INFO:__main__:Analysis complete: rejected (nudity: 87.13%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 18:32:35] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753642196447_1753642196446_20250622_003419.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753642196447_1753642196446_20250622_003419.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.8713341951370239, 'box': [633, 49, 785, 869]}, {'class': 'BELLY_EXPOSED', 'score': 0.8691685199737549, 'box': [438, 2302, 1004, 641]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8245043158531189, 'box': [1024, 1401, 654, 730]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8123218417167664, 'box': [147, 1541, 861, 855]}, {'class': 'ARMPITS_EXPOSED', 'score': 0.6061536073684692, 'box': [5, 1268, 305, 430]}]
+INFO:__main__:Detected: FACE_FEMALE at (633, 49) with confidence 87.13%
+INFO:__main__:Detected: BELLY_EXPOSED at (438, 2302) with confidence 86.92%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1024, 1401) with confidence 82.45%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (147, 1541) with confidence 81.23%
+INFO:__main__:Detected: ARMPITS_EXPOSED at (5, 1268) with confidence 60.62%
+INFO:__main__:Analysis complete - Total: 87.13%, Parts: {'breast': 82.45043158531189}
+INFO:__main__:Part locations: {'breast': {'x': 1024, 'y': 1401, 'width': 654, 'height': 730, 'confidence': 82.45}}
+INFO:__main__:Analysis complete: rejected (nudity: 87.13%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 18:49:59] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753642204473_1753642204473_20250622_003419.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753642204473_1753642204473_20250622_003419.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.8713341951370239, 'box': [633, 49, 785, 869]}, {'class': 'BELLY_EXPOSED', 'score': 0.8691685199737549, 'box': [438, 2302, 1004, 641]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8245043158531189, 'box': [1024, 1401, 654, 730]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8123218417167664, 'box': [147, 1541, 861, 855]}, {'class': 'ARMPITS_EXPOSED', 'score': 0.6061536073684692, 'box': [5, 1268, 305, 430]}]
+INFO:__main__:Detected: FACE_FEMALE at (633, 49) with confidence 87.13%
+INFO:__main__:Detected: BELLY_EXPOSED at (438, 2302) with confidence 86.92%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1024, 1401) with confidence 82.45%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (147, 1541) with confidence 81.23%
+INFO:__main__:Detected: ARMPITS_EXPOSED at (5, 1268) with confidence 60.62%
+INFO:__main__:Analysis complete - Total: 87.13%, Parts: {'breast': 82.45043158531189}
+INFO:__main__:Part locations: {'breast': {'x': 1024, 'y': 1401, 'width': 654, 'height': 730, 'confidence': 82.45}}
+INFO:__main__:Analysis complete: rejected (nudity: 87.13%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 18:50:07] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753642209488_1753642209488_20250622_003419.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753642209488_1753642209488_20250622_003419.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.8713341951370239, 'box': [633, 49, 785, 869]}, {'class': 'BELLY_EXPOSED', 'score': 0.8691685199737549, 'box': [438, 2302, 1004, 641]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8245043158531189, 'box': [1024, 1401, 654, 730]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8123218417167664, 'box': [147, 1541, 861, 855]}, {'class': 'ARMPITS_EXPOSED', 'score': 0.6061536073684692, 'box': [5, 1268, 305, 430]}]
+INFO:__main__:Detected: FACE_FEMALE at (633, 49) with confidence 87.13%
+INFO:__main__:Detected: BELLY_EXPOSED at (438, 2302) with confidence 86.92%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1024, 1401) with confidence 82.45%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (147, 1541) with confidence 81.23%
+INFO:__main__:Detected: ARMPITS_EXPOSED at (5, 1268) with confidence 60.62%
+INFO:__main__:Analysis complete - Total: 87.13%, Parts: {'breast': 82.45043158531189}
+INFO:__main__:Part locations: {'breast': {'x': 1024, 'y': 1401, 'width': 654, 'height': 730, 'confidence': 82.45}}
+INFO:__main__:Analysis complete: rejected (nudity: 87.13%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 18:50:11] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753642217043_1753642217043_20250622_003419.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753642217043_1753642217043_20250622_003419.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.8713341951370239, 'box': [633, 49, 785, 869]}, {'class': 'BELLY_EXPOSED', 'score': 0.8691685199737549, 'box': [438, 2302, 1004, 641]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8245043158531189, 'box': [1024, 1401, 654, 730]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8123218417167664, 'box': [147, 1541, 861, 855]}, {'class': 'ARMPITS_EXPOSED', 'score': 0.6061536073684692, 'box': [5, 1268, 305, 430]}]
+INFO:__main__:Detected: FACE_FEMALE at (633, 49) with confidence 87.13%
+INFO:__main__:Detected: BELLY_EXPOSED at (438, 2302) with confidence 86.92%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1024, 1401) with confidence 82.45%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (147, 1541) with confidence 81.23%
+INFO:__main__:Detected: ARMPITS_EXPOSED at (5, 1268) with confidence 60.62%
+INFO:__main__:Analysis complete - Total: 87.13%, Parts: {'breast': 82.45043158531189}
+INFO:__main__:Part locations: {'breast': {'x': 1024, 'y': 1401, 'width': 654, 'height': 730, 'confidence': 82.45}}
+INFO:__main__:Analysis complete: rejected (nudity: 87.13%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 18:50:20] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753642221256_1753642221255_20250622_003419.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753642221256_1753642221255_20250622_003419.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.8713341951370239, 'box': [633, 49, 785, 869]}, {'class': 'BELLY_EXPOSED', 'score': 0.8691685199737549, 'box': [438, 2302, 1004, 641]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8245043158531189, 'box': [1024, 1401, 654, 730]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8123218417167664, 'box': [147, 1541, 861, 855]}, {'class': 'ARMPITS_EXPOSED', 'score': 0.6061536073684692, 'box': [5, 1268, 305, 430]}]
+INFO:__main__:Detected: FACE_FEMALE at (633, 49) with confidence 87.13%
+INFO:__main__:Detected: BELLY_EXPOSED at (438, 2302) with confidence 86.92%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1024, 1401) with confidence 82.45%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (147, 1541) with confidence 81.23%
+INFO:__main__:Detected: ARMPITS_EXPOSED at (5, 1268) with confidence 60.62%
+INFO:__main__:Analysis complete - Total: 87.13%, Parts: {'breast': 82.45043158531189}
+INFO:__main__:Part locations: {'breast': {'x': 1024, 'y': 1401, 'width': 654, 'height': 730, 'confidence': 82.45}}
+INFO:__main__:Analysis complete: rejected (nudity: 87.13%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 18:50:23] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753642673938_1753642673938_20250622_003419.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753642673938_1753642673938_20250622_003419.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.8713341951370239, 'box': [633, 49, 785, 869]}, {'class': 'BELLY_EXPOSED', 'score': 0.8691685199737549, 'box': [438, 2302, 1004, 641]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8245043158531189, 'box': [1024, 1401, 654, 730]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8123218417167664, 'box': [147, 1541, 861, 855]}, {'class': 'ARMPITS_EXPOSED', 'score': 0.6061536073684692, 'box': [5, 1268, 305, 430]}]
+INFO:__main__:Detected: FACE_FEMALE at (633, 49) with confidence 87.13%
+INFO:__main__:Detected: BELLY_EXPOSED at (438, 2302) with confidence 86.92%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1024, 1401) with confidence 82.45%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (147, 1541) with confidence 81.23%
+INFO:__main__:Detected: ARMPITS_EXPOSED at (5, 1268) with confidence 60.62%
+INFO:__main__:Analysis complete - Total: 87.13%, Parts: {'breast': 82.45043158531189}
+INFO:__main__:Part locations: {'breast': {'x': 1024, 'y': 1401, 'width': 654, 'height': 730, 'confidence': 82.45}}
+INFO:__main__:Analysis complete: rejected (nudity: 87.13%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 18:57:56] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753642690596_1753642690596_20230703_111727.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753642690596_1753642690596_20230703_111727.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.7875638008117676, 'box': [1660, 1561, 1059, 1006]}, {'class': 'MALE_GENITALIA_EXPOSED', 'score': 0.26578259468078613, 'box': [2068, 2341, 538, 643]}]
+INFO:__main__:Detected: FACE_FEMALE at (1660, 1561) with confidence 78.76%
+INFO:__main__:Detected: MALE_GENITALIA_EXPOSED at (2068, 2341) with confidence 26.58%
+INFO:__main__:Analysis complete - Total: 78.76%, Parts: {'genitalia': 26.578259468078613}
+INFO:__main__:Part locations: {'genitalia': {'x': 2068, 'y': 2341, 'width': 538, 'height': 643, 'confidence': 26.58}}
+INFO:__main__:Analysis complete: rejected (nudity: 78.76%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 18:58:13] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753642700241_1753642700240_20230703_111727.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753642700241_1753642700240_20230703_111727.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.7875638008117676, 'box': [1660, 1561, 1059, 1006]}, {'class': 'MALE_GENITALIA_EXPOSED', 'score': 0.26578259468078613, 'box': [2068, 2341, 538, 643]}]
+INFO:__main__:Detected: FACE_FEMALE at (1660, 1561) with confidence 78.76%
+INFO:__main__:Detected: MALE_GENITALIA_EXPOSED at (2068, 2341) with confidence 26.58%
+INFO:__main__:Analysis complete - Total: 78.76%, Parts: {'genitalia': 26.578259468078613}
+INFO:__main__:Part locations: {'genitalia': {'x': 2068, 'y': 2341, 'width': 538, 'height': 643, 'confidence': 26.58}}
+INFO:__main__:Analysis complete: rejected (nudity: 78.76%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 18:58:23] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753643285308_1753643285308_20230703_111727.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753643285308_1753643285308_20230703_111727.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.7875638008117676, 'box': [1660, 1561, 1059, 1006]}, {'class': 'MALE_GENITALIA_EXPOSED', 'score': 0.26578259468078613, 'box': [2068, 2341, 538, 643]}]
+INFO:__main__:Detected: FACE_FEMALE at (1660, 1561) with confidence 78.76%
+INFO:__main__:Detected: MALE_GENITALIA_EXPOSED at (2068, 2341) with confidence 26.58%
+INFO:__main__:Analysis complete - Total: 78.76%, Parts: {'genitalia': 26.578259468078613}
+INFO:__main__:Part locations: {'genitalia': {'x': 2068, 'y': 2341, 'width': 538, 'height': 643, 'confidence': 26.58}}
+INFO:__main__:Analysis complete: rejected (nudity: 78.76%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 19:08:10] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753643649535_1753643649534_20230703_111727.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753643649535_1753643649534_20230703_111727.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.7875638008117676, 'box': [1660, 1561, 1059, 1006]}, {'class': 'MALE_GENITALIA_EXPOSED', 'score': 0.26578259468078613, 'box': [2068, 2341, 538, 643]}]
+INFO:__main__:Detected: FACE_FEMALE at (1660, 1561) with confidence 78.76%
+INFO:__main__:Detected: MALE_GENITALIA_EXPOSED at (2068, 2341) with confidence 26.58%
+INFO:__main__:Analysis complete - Total: 78.76%, Parts: {'genitalia': 26.578259468078613}
+INFO:__main__:Part locations: {'genitalia': {'x': 2068, 'y': 2341, 'width': 538, 'height': 643, 'confidence': 26.58}}
+INFO:__main__:Analysis complete: rejected (nudity: 78.76%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 19:14:13] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753643655715_1753643655715_20230703_111727.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753643655715_1753643655715_20230703_111727.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.7875638008117676, 'box': [1660, 1561, 1059, 1006]}, {'class': 'MALE_GENITALIA_EXPOSED', 'score': 0.26578259468078613, 'box': [2068, 2341, 538, 643]}]
+INFO:__main__:Detected: FACE_FEMALE at (1660, 1561) with confidence 78.76%
+INFO:__main__:Detected: MALE_GENITALIA_EXPOSED at (2068, 2341) with confidence 26.58%
+INFO:__main__:Analysis complete - Total: 78.76%, Parts: {'genitalia': 26.578259468078613}
+INFO:__main__:Part locations: {'genitalia': {'x': 2068, 'y': 2341, 'width': 538, 'height': 643, 'confidence': 26.58}}
+INFO:__main__:Analysis complete: rejected (nudity: 78.76%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 19:14:18] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753643662707_1753643662706_20230703_111727.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753643662707_1753643662706_20230703_111727.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.7875638008117676, 'box': [1660, 1561, 1059, 1006]}, {'class': 'MALE_GENITALIA_EXPOSED', 'score': 0.26578259468078613, 'box': [2068, 2341, 538, 643]}]
+INFO:__main__:Detected: FACE_FEMALE at (1660, 1561) with confidence 78.76%
+INFO:__main__:Detected: MALE_GENITALIA_EXPOSED at (2068, 2341) with confidence 26.58%
+INFO:__main__:Analysis complete - Total: 78.76%, Parts: {'genitalia': 26.578259468078613}
+INFO:__main__:Part locations: {'genitalia': {'x': 2068, 'y': 2341, 'width': 538, 'height': 643, 'confidence': 26.58}}
+INFO:__main__:Analysis complete: rejected (nudity: 78.76%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 19:14:25] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753644175462_1753644175458_20230703_111727.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753644175462_1753644175458_20230703_111727.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.7875638008117676, 'box': [1660, 1561, 1059, 1006]}, {'class': 'MALE_GENITALIA_EXPOSED', 'score': 0.26578259468078613, 'box': [2068, 2341, 538, 643]}]
+INFO:__main__:Detected: FACE_FEMALE at (1660, 1561) with confidence 78.76%
+INFO:__main__:Detected: MALE_GENITALIA_EXPOSED at (2068, 2341) with confidence 26.58%
+INFO:__main__:Analysis complete - Total: 78.76%, Parts: {'genitalia': 26.578259468078613}
+INFO:__main__:Part locations: {'genitalia': {'x': 2068, 'y': 2341, 'width': 538, 'height': 643, 'confidence': 26.58}}
+INFO:__main__:Analysis complete: rejected (nudity: 78.76%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 19:22:58] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753644179813_1753644179813_20230703_111727.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753644179813_1753644179813_20230703_111727.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.7875638008117676, 'box': [1660, 1561, 1059, 1006]}, {'class': 'MALE_GENITALIA_EXPOSED', 'score': 0.26578259468078613, 'box': [2068, 2341, 538, 643]}]
+INFO:__main__:Detected: FACE_FEMALE at (1660, 1561) with confidence 78.76%
+INFO:__main__:Detected: MALE_GENITALIA_EXPOSED at (2068, 2341) with confidence 26.58%
+INFO:__main__:Analysis complete - Total: 78.76%, Parts: {'genitalia': 26.578259468078613}
+INFO:__main__:Part locations: {'genitalia': {'x': 2068, 'y': 2341, 'width': 538, 'height': 643, 'confidence': 26.58}}
+INFO:__main__:Analysis complete: rejected (nudity: 78.76%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 19:23:03] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753644183748_1753644183748_20230703_111727.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753644183748_1753644183748_20230703_111727.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.7875638008117676, 'box': [1660, 1561, 1059, 1006]}, {'class': 'MALE_GENITALIA_EXPOSED', 'score': 0.26578259468078613, 'box': [2068, 2341, 538, 643]}]
+INFO:__main__:Detected: FACE_FEMALE at (1660, 1561) with confidence 78.76%
+INFO:__main__:Detected: MALE_GENITALIA_EXPOSED at (2068, 2341) with confidence 26.58%
+INFO:__main__:Analysis complete - Total: 78.76%, Parts: {'genitalia': 26.578259468078613}
+INFO:__main__:Part locations: {'genitalia': {'x': 2068, 'y': 2341, 'width': 538, 'height': 643, 'confidence': 26.58}}
+INFO:__main__:Analysis complete: rejected (nudity: 78.76%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 19:23:06] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753644187378_1753644187378_20230703_111727.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753644187378_1753644187378_20230703_111727.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.7875638008117676, 'box': [1660, 1561, 1059, 1006]}, {'class': 'MALE_GENITALIA_EXPOSED', 'score': 0.26578259468078613, 'box': [2068, 2341, 538, 643]}]
+INFO:__main__:Detected: FACE_FEMALE at (1660, 1561) with confidence 78.76%
+INFO:__main__:Detected: MALE_GENITALIA_EXPOSED at (2068, 2341) with confidence 26.58%
+INFO:__main__:Analysis complete - Total: 78.76%, Parts: {'genitalia': 26.578259468078613}
+INFO:__main__:Part locations: {'genitalia': {'x': 2068, 'y': 2341, 'width': 538, 'height': 643, 'confidence': 26.58}}
+INFO:__main__:Analysis complete: rejected (nudity: 78.76%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 19:23:10] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753644395488_1753644395487_20230703_111727.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753644395488_1753644395487_20230703_111727.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.7875638008117676, 'box': [1660, 1561, 1059, 1006]}, {'class': 'MALE_GENITALIA_EXPOSED', 'score': 0.26578259468078613, 'box': [2068, 2341, 538, 643]}]
+INFO:__main__:Detected: FACE_FEMALE at (1660, 1561) with confidence 78.76%
+INFO:__main__:Detected: MALE_GENITALIA_EXPOSED at (2068, 2341) with confidence 26.58%
+INFO:__main__:Analysis complete - Total: 78.76%, Parts: {'genitalia': 26.578259468078613}
+INFO:__main__:Part locations: {'genitalia': {'x': 2068, 'y': 2341, 'width': 538, 'height': 643, 'confidence': 26.58}}
+INFO:__main__:Analysis complete: rejected (nudity: 78.76%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 19:26:38] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753644417554_1753644417554_20230703_111727.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753644417554_1753644417554_20230703_111727.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.7875638008117676, 'box': [1660, 1561, 1059, 1006]}, {'class': 'MALE_GENITALIA_EXPOSED', 'score': 0.26578259468078613, 'box': [2068, 2341, 538, 643]}]
+INFO:__main__:Detected: FACE_FEMALE at (1660, 1561) with confidence 78.76%
+INFO:__main__:Detected: MALE_GENITALIA_EXPOSED at (2068, 2341) with confidence 26.58%
+INFO:__main__:Analysis complete - Total: 78.76%, Parts: {'genitalia': 26.578259468078613}
+INFO:__main__:Part locations: {'genitalia': {'x': 2068, 'y': 2341, 'width': 538, 'height': 643, 'confidence': 26.58}}
+INFO:__main__:Analysis complete: rejected (nudity: 78.76%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 19:27:00] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753644426294_1753644426294_20230703_111727.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753644426294_1753644426294_20230703_111727.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.7875638008117676, 'box': [1660, 1561, 1059, 1006]}, {'class': 'MALE_GENITALIA_EXPOSED', 'score': 0.26578259468078613, 'box': [2068, 2341, 538, 643]}]
+INFO:__main__:Detected: FACE_FEMALE at (1660, 1561) with confidence 78.76%
+INFO:__main__:Detected: MALE_GENITALIA_EXPOSED at (2068, 2341) with confidence 26.58%
+INFO:__main__:Analysis complete - Total: 78.76%, Parts: {'genitalia': 26.578259468078613}
+INFO:__main__:Part locations: {'genitalia': {'x': 2068, 'y': 2341, 'width': 538, 'height': 643, 'confidence': 26.58}}
+INFO:__main__:Analysis complete: rejected (nudity: 78.76%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 19:27:10] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753644684980_1753644684976_20250622_003419.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753644684980_1753644684976_20250622_003419.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.8713341951370239, 'box': [633, 49, 785, 869]}, {'class': 'BELLY_EXPOSED', 'score': 0.8691685199737549, 'box': [438, 2302, 1004, 641]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8245043158531189, 'box': [1024, 1401, 654, 730]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8123218417167664, 'box': [147, 1541, 861, 855]}, {'class': 'ARMPITS_EXPOSED', 'score': 0.6061536073684692, 'box': [5, 1268, 305, 430]}]
+INFO:__main__:Detected: FACE_FEMALE at (633, 49) with confidence 87.13%
+INFO:__main__:Detected: BELLY_EXPOSED at (438, 2302) with confidence 86.92%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1024, 1401) with confidence 82.45%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (147, 1541) with confidence 81.23%
+INFO:__main__:Detected: ARMPITS_EXPOSED at (5, 1268) with confidence 60.62%
+INFO:__main__:Analysis complete - Total: 87.13%, Parts: {'breast': 82.45043158531189}
+INFO:__main__:Part locations: {'breast': {'x': 1024, 'y': 1401, 'width': 654, 'height': 730, 'confidence': 82.45}}
+INFO:__main__:Analysis complete: rejected (nudity: 87.13%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 19:31:27] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753644785474_1753644785474_20250622_003419.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753644785474_1753644785474_20250622_003419.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.8713341951370239, 'box': [633, 49, 785, 869]}, {'class': 'BELLY_EXPOSED', 'score': 0.8691685199737549, 'box': [438, 2302, 1004, 641]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8245043158531189, 'box': [1024, 1401, 654, 730]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8123218417167664, 'box': [147, 1541, 861, 855]}, {'class': 'ARMPITS_EXPOSED', 'score': 0.6061536073684692, 'box': [5, 1268, 305, 430]}]
+INFO:__main__:Detected: FACE_FEMALE at (633, 49) with confidence 87.13%
+INFO:__main__:Detected: BELLY_EXPOSED at (438, 2302) with confidence 86.92%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1024, 1401) with confidence 82.45%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (147, 1541) with confidence 81.23%
+INFO:__main__:Detected: ARMPITS_EXPOSED at (5, 1268) with confidence 60.62%
+INFO:__main__:Analysis complete - Total: 87.13%, Parts: {'breast': 82.45043158531189}
+INFO:__main__:Part locations: {'breast': {'x': 1024, 'y': 1401, 'width': 654, 'height': 730, 'confidence': 82.45}}
+INFO:__main__:Analysis complete: rejected (nudity: 87.13%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 19:33:08] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753645676262_1753645676260_20250622_003419.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753645676262_1753645676260_20250622_003419.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.8713341951370239, 'box': [633, 49, 785, 869]}, {'class': 'BELLY_EXPOSED', 'score': 0.8691685199737549, 'box': [438, 2302, 1004, 641]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8245043158531189, 'box': [1024, 1401, 654, 730]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8123218417167664, 'box': [147, 1541, 861, 855]}, {'class': 'ARMPITS_EXPOSED', 'score': 0.6061536073684692, 'box': [5, 1268, 305, 430]}]
+INFO:__main__:Detected: FACE_FEMALE at (633, 49) with confidence 87.13%
+INFO:__main__:Detected: BELLY_EXPOSED at (438, 2302) with confidence 86.92%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1024, 1401) with confidence 82.45%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (147, 1541) with confidence 81.23%
+INFO:__main__:Detected: ARMPITS_EXPOSED at (5, 1268) with confidence 60.62%
+INFO:__main__:Analysis complete - Total: 87.13%, Parts: {'breast': 82.45043158531189}
+INFO:__main__:Part locations: {'breast': {'x': 1024, 'y': 1401, 'width': 654, 'height': 730, 'confidence': 82.45}}
+INFO:__main__:Analysis complete: rejected (nudity: 87.13%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 19:47:59] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753645680162_1753645680162_20250622_003419.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753645680162_1753645680162_20250622_003419.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.8713341951370239, 'box': [633, 49, 785, 869]}, {'class': 'BELLY_EXPOSED', 'score': 0.8691685199737549, 'box': [438, 2302, 1004, 641]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8245043158531189, 'box': [1024, 1401, 654, 730]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8123218417167664, 'box': [147, 1541, 861, 855]}, {'class': 'ARMPITS_EXPOSED', 'score': 0.6061536073684692, 'box': [5, 1268, 305, 430]}]
+INFO:__main__:Detected: FACE_FEMALE at (633, 49) with confidence 87.13%
+INFO:__main__:Detected: BELLY_EXPOSED at (438, 2302) with confidence 86.92%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1024, 1401) with confidence 82.45%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (147, 1541) with confidence 81.23%
+INFO:__main__:Detected: ARMPITS_EXPOSED at (5, 1268) with confidence 60.62%
+INFO:__main__:Analysis complete - Total: 87.13%, Parts: {'breast': 82.45043158531189}
+INFO:__main__:Part locations: {'breast': {'x': 1024, 'y': 1401, 'width': 654, 'height': 730, 'confidence': 82.45}}
+INFO:__main__:Analysis complete: rejected (nudity: 87.13%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 19:48:02] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753645683409_1753645683408_20250622_003419.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753645683409_1753645683408_20250622_003419.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.8713341951370239, 'box': [633, 49, 785, 869]}, {'class': 'BELLY_EXPOSED', 'score': 0.8691685199737549, 'box': [438, 2302, 1004, 641]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8245043158531189, 'box': [1024, 1401, 654, 730]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8123218417167664, 'box': [147, 1541, 861, 855]}, {'class': 'ARMPITS_EXPOSED', 'score': 0.6061536073684692, 'box': [5, 1268, 305, 430]}]
+INFO:__main__:Detected: FACE_FEMALE at (633, 49) with confidence 87.13%
+INFO:__main__:Detected: BELLY_EXPOSED at (438, 2302) with confidence 86.92%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1024, 1401) with confidence 82.45%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (147, 1541) with confidence 81.23%
+INFO:__main__:Detected: ARMPITS_EXPOSED at (5, 1268) with confidence 60.62%
+INFO:__main__:Analysis complete - Total: 87.13%, Parts: {'breast': 82.45043158531189}
+INFO:__main__:Part locations: {'breast': {'x': 1024, 'y': 1401, 'width': 654, 'height': 730, 'confidence': 82.45}}
+INFO:__main__:Analysis complete: rejected (nudity: 87.13%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 19:48:05] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753646863490_1753646863490_20250622_003419.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753646863490_1753646863490_20250622_003419.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.8713341951370239, 'box': [633, 49, 785, 869]}, {'class': 'BELLY_EXPOSED', 'score': 0.8691685199737549, 'box': [438, 2302, 1004, 641]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8245043158531189, 'box': [1024, 1401, 654, 730]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8123218417167664, 'box': [147, 1541, 861, 855]}, {'class': 'ARMPITS_EXPOSED', 'score': 0.6061536073684692, 'box': [5, 1268, 305, 430]}]
+INFO:__main__:Detected: FACE_FEMALE at (633, 49) with confidence 87.13%
+INFO:__main__:Detected: BELLY_EXPOSED at (438, 2302) with confidence 86.92%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1024, 1401) with confidence 82.45%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (147, 1541) with confidence 81.23%
+INFO:__main__:Detected: ARMPITS_EXPOSED at (5, 1268) with confidence 60.62%
+INFO:__main__:Analysis complete - Total: 87.13%, Parts: {'breast': 82.45043158531189}
+INFO:__main__:Part locations: {'breast': {'x': 1024, 'y': 1401, 'width': 654, 'height': 730, 'confidence': 82.45}}
+INFO:__main__:Analysis complete: rejected (nudity: 87.13%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 20:07:46] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753652321740_1753652321737_20250622_003419.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753652321740_1753652321737_20250622_003419.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.8713341951370239, 'box': [633, 49, 785, 869]}, {'class': 'BELLY_EXPOSED', 'score': 0.8691685199737549, 'box': [438, 2302, 1004, 641]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8245043158531189, 'box': [1024, 1401, 654, 730]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8123218417167664, 'box': [147, 1541, 861, 855]}, {'class': 'ARMPITS_EXPOSED', 'score': 0.6061536073684692, 'box': [5, 1268, 305, 430]}]
+INFO:__main__:Detected: FACE_FEMALE at (633, 49) with confidence 87.13%
+INFO:__main__:Detected: BELLY_EXPOSED at (438, 2302) with confidence 86.92%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1024, 1401) with confidence 82.45%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (147, 1541) with confidence 81.23%
+INFO:__main__:Detected: ARMPITS_EXPOSED at (5, 1268) with confidence 60.62%
+INFO:__main__:Analysis complete - Total: 87.13%, Parts: {'breast': 82.45043158531189}
+INFO:__main__:Part locations: {'breast': {'x': 1024, 'y': 1401, 'width': 654, 'height': 730, 'confidence': 82.45}}
+INFO:__main__:Analysis complete: rejected (nudity: 87.13%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 21:38:44] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753652379382_1753652379380_20250622_003419.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753652379382_1753652379380_20250622_003419.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.8713341951370239, 'box': [633, 49, 785, 869]}, {'class': 'BELLY_EXPOSED', 'score': 0.8691685199737549, 'box': [438, 2302, 1004, 641]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8245043158531189, 'box': [1024, 1401, 654, 730]}, {'class': 'FEMALE_BREAST_EXPOSED', 'score': 0.8123218417167664, 'box': [147, 1541, 861, 855]}, {'class': 'ARMPITS_EXPOSED', 'score': 0.6061536073684692, 'box': [5, 1268, 305, 430]}]
+INFO:__main__:Detected: FACE_FEMALE at (633, 49) with confidence 87.13%
+INFO:__main__:Detected: BELLY_EXPOSED at (438, 2302) with confidence 86.92%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (1024, 1401) with confidence 82.45%
+INFO:__main__:Detected: FEMALE_BREAST_EXPOSED at (147, 1541) with confidence 81.23%
+INFO:__main__:Detected: ARMPITS_EXPOSED at (5, 1268) with confidence 60.62%
+INFO:__main__:Analysis complete - Total: 87.13%, Parts: {'breast': 82.45043158531189}
+INFO:__main__:Part locations: {'breast': {'x': 1024, 'y': 1401, 'width': 654, 'height': 730, 'confidence': 82.45}}
+INFO:__main__:Analysis complete: rejected (nudity: 87.13%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 21:39:43] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753652507460_1753652507456_20230703_111727.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753652507460_1753652507456_20230703_111727.jpg
+INFO:__main__:NudeNet detections: [{'class': 'FACE_FEMALE', 'score': 0.7875638008117676, 'box': [1660, 1561, 1059, 1006]}, {'class': 'MALE_GENITALIA_EXPOSED', 'score': 0.26578259468078613, 'box': [2068, 2341, 538, 643]}]
+INFO:__main__:Detected: FACE_FEMALE at (1660, 1561) with confidence 78.76%
+INFO:__main__:Detected: MALE_GENITALIA_EXPOSED at (2068, 2341) with confidence 26.58%
+INFO:__main__:Analysis complete - Total: 78.76%, Parts: {'genitalia': 26.578259468078613}
+INFO:__main__:Part locations: {'genitalia': {'x': 2068, 'y': 2341, 'width': 538, 'height': 643, 'confidence': 26.58}}
+INFO:__main__:Analysis complete: rejected (nudity: 78.76%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 21:41:51] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753652515944_1753652515941_20250710_141253.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753652515944_1753652515941_20250710_141253.jpg
+INFO:__main__:NudeNet detections: [{'class': 'MALE_GENITALIA_EXPOSED', 'score': 0.65223228931427, 'box': [0, 172, 817, 1927]}, {'class': 'FEMALE_GENITALIA_EXPOSED', 'score': 0.4570100009441376, 'box': [317, 942, 1986, 2825]}]
+INFO:__main__:Detected: MALE_GENITALIA_EXPOSED at (0, 172) with confidence 65.22%
+INFO:__main__:Detected: FEMALE_GENITALIA_EXPOSED at (317, 942) with confidence 45.70%
+INFO:__main__:Analysis complete - Total: 65.22%, Parts: {'genitalia': 65.223228931427}
+INFO:__main__:Part locations: {'genitalia': {'x': 0, 'y': 172, 'width': 817, 'height': 1927, 'confidence': 65.22}}
+INFO:__main__:Analysis complete: rejected (nudity: 65.22%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 21:41:58] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753652524391_1753652524391_20250710_141253.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753652524391_1753652524391_20250710_141253.jpg
+INFO:__main__:NudeNet detections: [{'class': 'MALE_GENITALIA_EXPOSED', 'score': 0.65223228931427, 'box': [0, 172, 817, 1927]}, {'class': 'FEMALE_GENITALIA_EXPOSED', 'score': 0.4570100009441376, 'box': [317, 942, 1986, 2825]}]
+INFO:__main__:Detected: MALE_GENITALIA_EXPOSED at (0, 172) with confidence 65.22%
+INFO:__main__:Detected: FEMALE_GENITALIA_EXPOSED at (317, 942) with confidence 45.70%
+INFO:__main__:Analysis complete - Total: 65.22%, Parts: {'genitalia': 65.223228931427}
+INFO:__main__:Part locations: {'genitalia': {'x': 0, 'y': 172, 'width': 817, 'height': 1927, 'confidence': 65.22}}
+INFO:__main__:Analysis complete: rejected (nudity: 65.22%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 21:42:07] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753652539009_1753652539009_20230703_111632.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753652539009_1753652539009_20230703_111632.jpg
+INFO:__main__:NudeNet detections: [{'class': 'BUTTOCKS_EXPOSED', 'score': 0.6740303635597229, 'box': [447, 1642, 2025, 1440]}, {'class': 'FEMALE_GENITALIA_EXPOSED', 'score': 0.5641533136367798, 'box': [1214, 2523, 393, 480]}]
+INFO:__main__:Detected: BUTTOCKS_EXPOSED at (447, 1642) with confidence 67.40%
+INFO:__main__:Detected: FEMALE_GENITALIA_EXPOSED at (1214, 2523) with confidence 56.42%
+INFO:__main__:Analysis complete - Total: 67.40%, Parts: {'buttocks': 67.40303635597229, 'genitalia': 56.41533136367798}
+INFO:__main__:Part locations: {'buttocks': {'x': 447, 'y': 1642, 'width': 2025, 'height': 1440, 'confidence': 67.4}, 'genitalia': {'x': 1214, 'y': 2523, 'width': 393, 'height': 480, 'confidence': 56.42}}
+INFO:__main__:Analysis complete: rejected (nudity: 67.40%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 21:42:22] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753654732910_1753654732906_20230703_111632.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753654732910_1753654732906_20230703_111632.jpg
+INFO:__main__:NudeNet detections: [{'class': 'BUTTOCKS_EXPOSED', 'score': 0.6740303635597229, 'box': [447, 1642, 2025, 1440]}, {'class': 'FEMALE_GENITALIA_EXPOSED', 'score': 0.5641533136367798, 'box': [1214, 2523, 393, 480]}]
+INFO:__main__:Detected: BUTTOCKS_EXPOSED at (447, 1642) with confidence 67.40%
+INFO:__main__:Detected: FEMALE_GENITALIA_EXPOSED at (1214, 2523) with confidence 56.42%
+INFO:__main__:Analysis complete - Total: 67.40%, Parts: {'buttocks': 67.40303635597229, 'genitalia': 56.41533136367798}
+INFO:__main__:Part locations: {'buttocks': {'x': 447, 'y': 1642, 'width': 2025, 'height': 1440, 'confidence': 67.4}, 'genitalia': {'x': 1214, 'y': 2523, 'width': 393, 'height': 480, 'confidence': 56.42}}
+INFO:__main__:Analysis complete: rejected (nudity: 67.40%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 22:18:56] "POST /analyze HTTP/1.1" 200 -
+INFO:__main__:Analyzing: /tmp/upload_1753654991216_1753654991215_20230703_111632.jpg for context: public_gallery
+INFO:__main__:Analyzing image: /tmp/upload_1753654991216_1753654991215_20230703_111632.jpg
+INFO:__main__:NudeNet detections: [{'class': 'BUTTOCKS_EXPOSED', 'score': 0.6740303635597229, 'box': [447, 1642, 2025, 1440]}, {'class': 'FEMALE_GENITALIA_EXPOSED', 'score': 0.5641533136367798, 'box': [1214, 2523, 393, 480]}]
+INFO:__main__:Detected: BUTTOCKS_EXPOSED at (447, 1642) with confidence 67.40%
+INFO:__main__:Detected: FEMALE_GENITALIA_EXPOSED at (1214, 2523) with confidence 56.42%
+INFO:__main__:Analysis complete - Total: 67.40%, Parts: {'buttocks': 67.40303635597229, 'genitalia': 56.41533136367798}
+INFO:__main__:Part locations: {'buttocks': {'x': 447, 'y': 1642, 'width': 2025, 'height': 1440, 'confidence': 67.4}, 'genitalia': {'x': 1214, 'y': 2523, 'width': 393, 'height': 480, 'confidence': 56.42}}
+INFO:__main__:Analysis complete: rejected (nudity: 67.40%)
+INFO:werkzeug:127.0.0.1 - - [27/Jul/2025 22:23:15] "POST /analyze HTTP/1.1" 200 -

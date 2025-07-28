@@ -1,0 +1,26 @@
+INFO:__main__:Initializing NudeNet detector...
+INFO:__main__:Initializing MediaPipe pose analyzer...
+INFO:__main__:Enhanced moderation API initialized successfully
+INFO:__main__:Starting enhanced moderation API on 0.0.0.0:5000
+ * Serving Flask app 'enhanced_moderation_api'
+ * Debug mode: on
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.31.45.113:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+W0000 00:00:1753657042.341644    1570 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1753657042.528540    1571 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+INFO:__main__:Initializing NudeNet detector...
+INFO:__main__:Initializing MediaPipe pose analyzer...
+INFO:__main__:Enhanced moderation API initialized successfully
+INFO:__main__:Starting enhanced moderation API on 0.0.0.0:5000
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 631-127-893
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+W0000 00:00:1753657044.852681    1590 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1753657051.385499    1589 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
